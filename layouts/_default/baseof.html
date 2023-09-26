@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {{ partial "head.html" }}
+  </head>
+
+  <body>
+    {{ partial "header.html" }}
+
+    <main>
+      {{ block "main" . }}{{ end }}
+    </main>
+
+    {{ with resources.Get "js/theme-switcher.js" }}
+    <script src="{{ .Permalink }}"></script>
+    {{ end }}
+  </body>
+</html>

@@ -1,0 +1,43 @@
+{{ define "main" }}
+
+<div class="index">
+  <div>
+    <h2>Posts</h2>
+
+    {{ range (where .Site.RegularPages "Section" "blog") }}
+    <ul class="posts-list">
+      <li>
+	<span>{{ .Date.Format "January 2, 2006" }}</span><br>
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+      </li>
+    </ul>
+    {{ end }}
+  </div>
+
+  <aside>
+    {{ with resources.Get "avatar.png" }}
+    {{ with .Resize (printf "%dx%d webp" .Width .Height) }}
+    <img src="{{ .Permalink }}" alt="Avatar" width="{{ .Width }}" height="{{ .Height }}" />
+    {{ end }}
+    {{ end }}
+
+    <h2>Rayan Nakib's Blog</h2>
+
+    <p>
+      <b>Email </b>
+      <a href="mailto:rayan.nakib@tutamail.com">rayan.nakib@tutamail.com</a>
+    </p>
+
+    <p>
+      <b>CodeBerg </b>
+      <a href="https://codeberg.org/nakibrayan2">@nakibrayan3</a>
+    </p>
+
+    <p>
+      <b>PGP </b>
+      <a href="/6A410DC3423DEFD42286C1671BF8A6A2C37AB108.gpg">1BF8A6A2C37AB108</a>
+    </p>
+  </aside>
+</div>
+
+{{ end }}

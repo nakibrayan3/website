@@ -1,0 +1,36 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<meta name="color-scheme" content="light dark" />
+<title>Rayan Nakib's Blog</title>
+
+{{ with resources.Get "avatar.png" }}
+{{ with .Resize (printf "%dx%d webp" .Width .Height) }}
+<link rel="icon" href="{{ .Permalink }}" type="image/x-icon" />
+{{ end }}
+{{ end }}
+
+{{ with resources.Get "css/main.css" | minify | fingerprint | postCSS (dict "config" "./assets/css/postcss.config.js") }}
+<link
+  rel="stylesheet"
+  href="{{ .Permalink }}"
+  integrity="{{ .Data.Integrity }}"
+/>
+{{ end }}
+
+{{ with resources.Get "css/gruvbox-light.css" }}
+<link
+  rel="stylesheet"
+  href="{{ .Permalink }}"
+  media="(prefers-color-scheme: dark)"
+/>
+{{ end }}
+
+{{ with resources.Get "css/gruvbox-dark.css" }}
+<link
+  rel="stylesheet"
+  href="{{ .Permalink }}"
+  media="(prefers-color-scheme: light)"
+  id="pre-css"
+/>
+{{ end }}
