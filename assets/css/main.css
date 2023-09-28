@@ -224,7 +224,6 @@ div.index {
 
 aside {
     width: 30%;
-    height: 100vh;
 }
 
 @media screen and (max-width: 56rem) {
@@ -259,6 +258,19 @@ div.index aside ul li svg {
   margin-right: 0.5rem;
 
   fill: var(--foreground-color-01);
+}
+
+div.index aside hr {
+    display: none;
+
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+@media screen and (max-width: 56rem) {
+    div.index aside hr {
+        display: block;
+    }
 }
 
 /******************************************************************************/
