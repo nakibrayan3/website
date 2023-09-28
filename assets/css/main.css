@@ -12,7 +12,6 @@
   --background-color-03: #d5c4a1;
 
   --link-color: #076678;
-  --link-color-hover: #458588;
 }
 
 :root[data-theme="dark"] {
@@ -25,7 +24,6 @@
   --background-color-03: #504945;
 
   --link-color: #458588;
-  --link-color-hover: #83a598;
 }
 
 @media (prefers-color-scheme: light) {
@@ -39,7 +37,6 @@
       --background-color-03: #d5c4a1;
 
       --link-color: #076678;
-      --link-color-hover: #458588;
     }
 }
 
@@ -54,7 +51,6 @@
         --background-color-03: #504945;
 
         --link-color: #458588;
-        --link-color-hover: #83a598;
     }
 }
 
@@ -341,5 +337,5 @@ a {
 }
 
 a:hover {
-    color: var(--link-color-hover);
+    text-decoration: underline;
 }
