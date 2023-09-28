@@ -30,7 +30,7 @@ You will need a USB of at least 2GB, after that visit the
 [Etcher](https://etcher.balena.io/#download-etcher) page and install the
 program.
 
-![Etcher Screenshot](etcher-screenshot.webp)
+{{< figure src="etcher-screenshot.webp" alt="Etcher Screenshot" width="788" height="470" >}}
 
 in Etcher under `Select Image` chose the Arch Linux ISO you downloaded
 previously, and under `Select Drive` chose the USB that you want to install
@@ -54,7 +54,7 @@ installation medium. Typically it is achieved by pressing F2, F10 or F12 key
 
 2. When the installation medium's boot you will see a menu like this:
 
-![arch linux iso boot menu](archlinux-boot-menu.jpg)
+{{< figure src="archlinux-boot-menu.jpg" alt="arch linux iso boot menu" width="474" height="355" >}}
 
 Select `Boot Arch Linux (x86_64)` (the fist option) and press kbd>Enter</kbd>
 to enter the installation environment. 
