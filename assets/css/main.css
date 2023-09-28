@@ -224,12 +224,12 @@ div.index {
 
 aside {
     width: 30%;
+    height: 100vh;
 }
 
 @media screen and (max-width: 56rem) {
     aside {
         width: 100%;
-	margin-bottom: 3rem;
     }
 }
 
@@ -246,13 +246,28 @@ div.index aside img {
     border: solid 3px var(--background-color-03);
 }
 
+div.index aside ul {
+    margin-left: 0;
+}
+
+div.index aside ul li {
+    display: flex;
+}
+
+div.index aside ul li svg {
+  max-width: 1.2rem;
+  margin-right: 0.5rem;
+
+  fill: var(--foreground-color-01);
+}
+
 /******************************************************************************/
 /*                                  Posts List                                */
 /******************************************************************************/
 
 ul.posts-list {
     list-style: none;
-    margin-left: 0;
+    margin: 0;
     font-size: 1.1rem;
 }
 
