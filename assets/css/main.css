@@ -3,142 +3,58 @@
 /******************************************************************************/
 
 :root[data-theme="light"] {
-  --fg1: #3c3836;
-  --fg2: #282828;
-  --fg3: #504945;
+  --foreground-color-01: #3c3836;
+  --foreground-color-02: #282828;
+  --foreground-color-03: #504945;
 
-  --bg1: #fbf1c7;
-  --bg2: #ebdbb2;
-  --bg3: #d5c4a1;
+  --background-color-01: #fbf1c7;
+  --background-color-02: #ebdbb2;
+  --background-color-03: #d5c4a1;
 
-  --gray1: #a89984;
-  --gray2: #928374;
-
-  --red1: #cc241d;
-  --red2: #9d0006;
-
-  --green1: #98971a;
-  --green2: #797403;
-
-  --yellow1: #d79921;
-  --yellow2: #b57614;
-
-  --blue1: #458588;
-  --blue2: #076678;
-
-  --purple1: #b16286;
-  --purple2: #8f3f71;
-
-  --aqua1: #689d6a;
-  --aqua2: #427b58;
-
-  --orange1: #d65d0e;
-  --orange2: #af3a03;
+  --link-color: #076678;
+  --link-color-hover: #458588;
 }
 
 :root[data-theme="dark"] {
-  --fg1: #ebdbb2;
-  --fg2: #fbf1c7;
-  --fg3: #d5c4a1;
+  --foreground-color-01: #ebdbb2;
+  --foreground-color-02: #fbf1c7;
+  --foreground-color-03: #d5c4a1;
 
-  --bg1: #282828;
-  --bg2: #3c3836;
-  --bg3: #504945;
+  --background-color-01: #282828;
+  --background-color-02: #3c3836;
+  --background-color-03: #504945;
 
-  --gray1: #7c6f64;
-  --gray2: #928374;
-
-  --red1: #cc241d;
-  --red2: #fb4934;
-
-  --green1: #98971a;
-  --green2: #b8bb26;
-
-  --yellow1: #d79921;
-  --yellow2: #fabd2f;
-
-  --blue1: #458588;
-  --blue2: #83a598;
-
-  --purple1: #b16286;
-  --purple2: #d3869b;
-
-  --aqua1: #689d6a;
-  --aqua2: #8ec07c;
-
-  --orange1: #d65d0e;
-  --orange2: #fe8019;
+  --link-color: #458588;
+  --link-color-hover: #83a598;
 }
 
 @media (prefers-color-scheme: light) {
   :root {
-      --fg1: #282828;
-      --fg2: #3c3836;
-      --fg3: #504945;
+      --foreground-color-01: #282828;
+      --foreground-color-02: #3c3836;
+      --foreground-color-03: #504945;
 
-      --bg1: #fbf1c7;
-      --bg2: #ebdbb2;
-      --bg3: #d5c4a1;
+      --background-color-01: #fbf1c7;
+      --background-color-02: #ebdbb2;
+      --background-color-03: #d5c4a1;
 
-      --gray1: #a89984;
-      --gray2: #928374;
-
-      --red1: #cc241d;
-      --red2: #9d0006;
-
-      --green1: #98971a;
-      --green2: #797403;
-
-      --yellow1: #d79921;
-      --yellow2: #b57614;
-
-      --blue1: #458588;
-      --blue2: #076678;
-
-      --purple1: #b16286;
-      --purple2: #8f3f71;
-
-      --aqua1: #689d6a;
-      --aqua2: #427b58;
-
-      --orange1: #d65d0e;
-      --orange2: #af3a03;
+      --link-color: #076678;
+      --link-color-hover: #458588;
     }
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --fg1: #ebdbb2;
-        --fg2: #fbf1c7;
-        --fg3: #d5c4a1;
+        --foreground-color-01: #ebdbb2;
+        --foreground-color-02: #fbf1c7;
+        --foreground-color-03: #d5c4a1;
 
-        --bg1: #282828;
-        --bg2: #3c3836;
-        --bg3: #504945;
+        --background-color-01: #282828;
+        --background-color-02: #3c3836;
+        --background-color-03: #504945;
 
-        --gray1: #7c6f64;
-        --gray2: #928374;
-
-        --red1: #cc241d;
-        --red2: #fb4934;
-
-        --green1: #98971a;
-        --green2: #b8bb26;
-
-        --yellow1: #d79921;
-        --yellow2: #fabd2f;
-
-        --blue1: #458588;
-        --blue2: #83a598;
-
-        --purple1: #b16286;
-        --purple2: #d3869b;
-
-        --aqua1: #689d6a;
-        --aqua2: #8ec07c;
-
-        --orange1: #d65d0e;
-        --orange2: #fe8019;
+        --link-color: #458588;
+        --link-color-hover: #83a598;
     }
 }
 
@@ -154,8 +70,8 @@
 }
 
 body {
-    background-color: var(--bg1);
-    color: var(--fg1);
+    background-color: var(--background-color-01);
+    color: var(--foreground-color-01);
 }
 
 main {
@@ -183,7 +99,7 @@ nav {
     margin-bottom: 3rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    background-color: var(--bg2);
+    background-color: var(--background-color-02);
 }
 
 nav ul {
@@ -199,11 +115,11 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: var(--fg1);
+    color: var(--foreground-color-01);
 }
 
 nav ul li a:hover {
-    color: var(--fg3);
+    color: var(--foreground-color-03);
 }
 
 nav label,
@@ -222,12 +138,12 @@ nav ul label div {
     height: 0.25rem;
     margin-top: 0.15rem;
     margin-bottom: 0.15rem;
-    background-color: var(--fg1);
+    background-color: var(--foreground-color-01);
     border-radius: 0.2rem;
 }
 
 nav ul label div {
-    background-color: var(--bg1);
+    background-color: var(--background-color-01);
 }
 
 @media screen and (max-width: 56rem) {
@@ -244,7 +160,7 @@ nav ul label div {
     nav ul.nav-links {
         flex-direction: column;
         position: fixed;
-        background: var(--fg1);
+        background: var(--foreground-color-01);
         height: 100vh;
         top: 0;
         right: -100%;
@@ -265,11 +181,11 @@ nav ul label div {
     }
 
     nav ul.nav-links li a {
-        color: var(--bg1);
+        color: var(--background-color-01);
     }
 
     nav ul.nav-links li a:hover {
-        color: var(--bg3);
+        color: var(--background-color-03);
     }
 }
 
@@ -282,12 +198,12 @@ svg.theme-switcher {
   width:1.2rem;
   height: auto;
 
-  fill: var(--fg1);
+  fill: var(--foreground-color-01);
 }
 
 @media screen and (max-width: 56rem) {
   svg.theme-switcher {
-    fill: var(--bg1);
+    fill: var(--background-color-01);
   }
 }
 
@@ -327,7 +243,7 @@ aside {
 div.index aside img {
     max-width: 15rem;
     border-radius: 50%;
-    border: solid 3px var(--bg3);
+    border: solid 3px var(--background-color-03);
 }
 
 /******************************************************************************/
@@ -392,10 +308,10 @@ pre {
 }
 
 a {
-    color: var(--blue2);
+    color: var(--link-color);
     text-decoration: none;
 }
 
 a:hover {
-    color: var(--blue1);
+    color: var(--link-color-hover);
 }
