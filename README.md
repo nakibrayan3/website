@@ -2,8 +2,20 @@
 
 my personal website and blog.
 
-## Build
+## Development
+
+dependencies
+
+- hugo
+
+### build
 
 ```bash
 hugo
+```
+
+### Preview
+
+```bash
+hugo serve
 ```
