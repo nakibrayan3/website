@@ -339,3 +339,7 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+hr {
+    color: var(--foreground-color-01);
+}
