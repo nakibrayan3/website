@@ -1,51 +1,49 @@
-:root[data-theme="light"] {
-  --foreground-color-01: #3c3836;
-  --foreground-color-02: #282828;
-  --foreground-color-03: #504945;
+:root {
+  @media (prefers-color-scheme: light) {
+    --foreground-color-01: #282828;
+    --foreground-color-02: #3c3836;
+    --foreground-color-03: #504945;
 
-  --background-color-01: #fbf1c7;
-  --background-color-02: #ebdbb2;
-  --background-color-03: #d5c4a1;
+    --background-color-01: #fbf1c7;
+    --background-color-02: #ebdbb2;
+    --background-color-03: #d5c4a1;
 
-  --link-color: #076678;
-}
+    --link-color: #076678;
+  }
 
-:root[data-theme="dark"] {
-  --foreground-color-01: #ebdbb2;
-  --foreground-color-02: #fbf1c7;
-  --foreground-color-03: #d5c4a1;
+  @media (prefers-color-scheme: dark) {
+    --foreground-color-01: #ebdbb2;
+    --foreground-color-02: #fbf1c7;
+    --foreground-color-03: #d5c4a1;
 
-  --background-color-01: #282828;
-  --background-color-02: #3c3836;
-  --background-color-03: #504945;
+    --background-color-01: #282828;
+    --background-color-02: #3c3836;
+    --background-color-03: #504945;
 
-  --link-color: #458588;
-}
+    --link-color: #458588;
+  }
 
-@media (prefers-color-scheme: light) {
-  :root {
-      --foreground-color-01: #282828;
-      --foreground-color-02: #3c3836;
-      --foreground-color-03: #504945;
+  &[data-theme="light"] {
+    --foreground-color-01: #3c3836;
+    --foreground-color-02: #282828;
+    --foreground-color-03: #504945;
 
-      --background-color-01: #fbf1c7;
-      --background-color-02: #ebdbb2;
-      --background-color-03: #d5c4a1;
+    --background-color-01: #fbf1c7;
+    --background-color-02: #ebdbb2;
+    --background-color-03: #d5c4a1;
 
-      --link-color: #076678;
-    }
-}
+    --link-color: #076678;
+  }
 
-@media (prefers-color-scheme: dark) {
-    :root {
-        --foreground-color-01: #ebdbb2;
-        --foreground-color-02: #fbf1c7;
-        --foreground-color-03: #d5c4a1;
+  &[data-theme="dark"] {
+    --foreground-color-01: #ebdbb2;
+    --foreground-color-02: #fbf1c7;
+    --foreground-color-03: #d5c4a1;
 
-        --background-color-01: #282828;
-        --background-color-02: #3c3836;
-        --background-color-03: #504945;
+    --background-color-01: #282828;
+    --background-color-02: #3c3836;
+    --background-color-03: #504945;
 
-        --link-color: #458588;
-    }
+    --link-color: #458588;
+  }
 }

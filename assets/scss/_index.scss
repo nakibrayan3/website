@@ -1,61 +1,53 @@
 div.index {
-    display: flex;
-    justify-content: space-between;
-}
+  display: flex;
+  justify-content: space-between;
 
-@media screen and (max-width: 56rem) {
-    div.index {
-        flex-direction: column-reverse;
-    }
-}
+  @media screen and (max-width: 56rem) {
+    flex-direction: column-reverse;
+  }
 
-aside {
+  aside {
     width: 30%;
-}
 
-@media screen and (max-width: 56rem) {
-    aside {
-        width: 100%;
+    @media screen and (max-width: 56rem) {
+      width: 100%;
     }
-}
 
-@media screen and (max-width: 56rem) {
-    div.index aside p,
-    div.index aside h2 {
+    img {
+        max-width: 15rem;
+        border-radius: 50%;
+        border: solid 3px var(--background-color-03);
+    }
+
+    h2 {
+      @media screen and (max-width: 56rem) {
         text-align: center;
+      }
     }
-}
 
-div.index aside img {
-    max-width: 15rem;
-    border-radius: 50%;
-    border: solid 3px var(--background-color-03);
-}
+    ul {
+      margin-left: 0;
 
-div.index aside ul {
-    margin-left: 0;
-}
+      li {
+        display: flex;
 
-div.index aside ul li {
-    display: flex;
-}
+        svg {
+          max-width: 1.2rem;
+          margin-right: 0.5rem;
 
-div.index aside ul li svg {
-  max-width: 1.2rem;
-  margin-right: 0.5rem;
+          fill: var(--foreground-color-01);
+        }
+      }
+    }
+    hr {
+      display: none;
 
-  fill: var(--foreground-color-01);
-}
-
-div.index aside hr {
-    display: none;
-
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-}
-
-@media screen and (max-width: 56rem) {
-    div.index aside hr {
+      @media screen and (max-width: 56rem) {
         display: block;
+
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+      }
     }
+  }
 }

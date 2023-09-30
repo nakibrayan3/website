@@ -4,52 +4,52 @@ h3,
 h4,
 h5
 h6 {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 p {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 img {
-    display: block;
+  display: block;
 
-    height: auto;
-    max-width: calc(100% - 1rem);
+  height: auto;
+  max-width: calc(100% - 1rem);
 
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 1rem;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 1rem;
 
 }
 
 ul,
 ol {
-    margin-left: 2rem;
-    margin-bottom: 1rem;
-}
+  margin-left: 2rem;
+  margin-bottom: 1rem;
 
-li,
-li p {
+  li,
+  p {
     margin-bottom: 0.5rem;
+  }
 }
 
 pre {
-    padding: 1rem;
-    border-radius: 0.5rem;
-    margin-bottom: 1rem;
-    overflow: auto;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  overflow: auto;
 }
 
 a {
-    color: var(--link-color);
-    text-decoration: none;
-}
+  color: var(--link-color);
+  text-decoration: none;
 
-a:hover {
+  &:hover {
     text-decoration: underline;
+  }
 }
 
 hr {
-    color: var(--foreground-color-01);
+  color: var(--foreground-color-01);
 }

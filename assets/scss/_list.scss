@@ -1,9 +1,10 @@
 ul.posts-list {
-    list-style: none;
-    margin: 0;
-    font-size: 1.1rem;
+  list-style: none;
+  margin: 0;
+  font-size: 1.1rem;
+
+  li span {
+    margin-bottom: 0.5rem;
+  }
 }
 
-ul.posts-list li span {
-    margin-bottom: 0.5rem;
-}
