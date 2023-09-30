@@ -1,0 +1,115 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: var(--background-color-02);
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 0.5rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--foreground-color-01);
+}
+
+nav ul li a:hover {
+    color: var(--foreground-color-03);
+}
+
+nav label,
+nav ul label {
+    display: none;
+    cursor: pointer;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    direction: rtl;
+}
+
+nav label div,
+nav ul label div {
+    width: 2rem;
+    height: 0.25rem;
+    margin-top: 0.15rem;
+    margin-bottom: 0.15rem;
+    background-color: var(--foreground-color-01);
+    border-radius: 0.2rem;
+}
+
+nav ul label div {
+    background-color: var(--background-color-01);
+}
+
+@media screen and (max-width: 56rem) {
+    nav label,
+    nav ul label {
+        display: grid;
+    }
+
+    
+    nav ul label {
+        margin-bottom: 2rem;
+    }
+    
+    nav ul.nav-links {
+        flex-direction: column;
+        position: fixed;
+        background: var(--foreground-color-01);
+        height: 100vh;
+        top: 0;
+        right: -100%;
+        width: 50%;
+        transition: ease-in-out 400ms;
+        padding-top: 1rem;
+        border-radius: 0;
+	align-items: normal;
+    }
+
+    #hamburger-check:checked ~ .nav-links {
+        right: 0;
+    }
+
+    nav ul.nav-links li {
+	text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    nav ul.nav-links li a {
+        color: var(--background-color-01);
+    }
+
+    nav ul.nav-links li a:hover {
+        color: var(--background-color-03);
+    }
+}
+
+svg.theme-switcher {
+  display: block;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  width:1.2rem;
+  height: auto;
+
+  fill: var(--foreground-color-01);
+
+  -webkit-tap-highlight-color: transparent;
+}
+
+@media screen and (max-width: 56rem) {
+  svg.theme-switcher {
+    fill: var(--background-color-01);
+  }
+}
