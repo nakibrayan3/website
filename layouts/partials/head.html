@@ -11,7 +11,7 @@
 {{ end }}
 {{ end }}
 
-{{ with resources.Get "css/main.css" | minify | fingerprint | postCSS (dict "config" "./assets/css/postcss.config.js") }}
+{{ with resources.Get "scss/main.scss" | toCSS | minify | fingerprint }}
 <link
   rel="stylesheet"
   href="{{ .Permalink }}"
@@ -19,7 +19,7 @@
 />
 {{ end }}
 
-{{ with resources.Get "css/gruvbox-light.css" | postCSS (dict "config" "./assets/css/postcss.config.js") }}
+{{ with resources.Get "css/gruvbox-light.css" }}
 <link
   rel="stylesheet"
   href="{{ .Permalink }}"
@@ -27,7 +27,7 @@
 />
 {{ end }}
 
-{{ with resources.Get "css/gruvbox-dark.css" | postCSS (dict "config" "./assets/css/postcss.config.js") }}
+{{ with resources.Get "css/gruvbox-dark.css" }}
 <link
   rel="stylesheet"
   href="{{ .Permalink }}"
