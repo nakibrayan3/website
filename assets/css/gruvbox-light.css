@@ -1,19 +1,1 @@
-/*
-Copyright (C) Rayan Nakib
-This file is part of website <https://codeberg.org/nakibrayan2/website>.
-
-website is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
-
-website config is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
-GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License
-along with this program. If not, see <https://www.gnu.org/licenses/>.
-*/
-
 .bg{color:#3c3836;background-color:#fbf1c7}.chroma{color:#3c3836;background-color:#fbf1c7}.chroma .x{}.chroma .err{}.chroma .cl{}.chroma .lnlinks{outline:none;text-decoration:none;color:inherit}.chroma .lntd{vertical-align:top;padding:0;margin:0;border:0}.chroma .lntable{border-spacing:0;padding:0;margin:0;border:0}.chroma .hl{background-color:#ffc}.chroma .lnt{white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#9d9b9a}.chroma .ln{white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#9d9b9a}.chroma .line{display:flex}.chroma .k{color:#af3a03}.chroma .kc{color:#af3a03}.chroma .kd{color:#af3a03}.chroma .kn{color:#af3a03}.chroma .kp{color:#af3a03}.chroma .kr{color:#af3a03}.chroma .kt{color:#b57614}.chroma .n{}.chroma .na{color:#79740e;font-weight:700}.chroma .nb{color:#b57614}.chroma .bp{}.chroma .nc{}.chroma .no{color:#d3869b}.chroma .nd{}.chroma .ni{color:#b57614}.chroma .ne{color:#fb4934}.chroma .nf{color:#b57614}.chroma .fm{}.chroma .nl{color:#9d0006}.chroma .nn{}.chroma .nx{}.chroma .py{}.chroma .nt{color:#9d0006}.chroma .nv{}.chroma .vc{}.chroma .vg{}.chroma .vi{}.chroma .vm{}.chroma .l{}.chroma .ld{}.chroma .s{color:#79740e}.chroma .sa{color:#79740e}.chroma .sb{color:#79740e}.chroma .sc{color:#79740e}.chroma .dl{color:#79740e}.chroma .sd{color:#79740e}.chroma .s2{color:#79740e}.chroma .se{color:#79740e}.chroma .sh{color:#79740e}.chroma .si{color:#79740e}.chroma .sx{color:#79740e}.chroma .sr{color:#79740e}.chroma .s1{color:#79740e}.chroma .ss{color:#076678}.chroma .m{color:#8f3f71}.chroma .mb{color:#8f3f71}.chroma .mf{color:#8f3f71}.chroma .mh{color:#8f3f71}.chroma .mi{color:#8f3f71}.chroma .il{color:#8f3f71}.chroma .mo{color:#8f3f71}.chroma .o{color:#af3a03}.chroma .ow{color:#af3a03}.chroma .p{}.chroma .c{color:#928374;font-style:italic}.chroma .ch{color:#928374;font-style:italic}.chroma .cm{color:#928374;font-style:italic}.chroma .c1{color:#928374;font-style:italic}.chroma .cs{color:#928374;font-style:italic}.chroma .cp{color:#427b58}.chroma .cpf{color:#427b58;font-style:italic}.chroma .g{}.chroma .gd{color:#282828;background-color:#9d0006}.chroma .ge{color:#076678;text-decoration:underline}.chroma .gr{background-color:#9d0006;font-weight:700}.chroma .gh{color:#79740e;font-weight:700}.chroma .gi{color:#282828;background-color:#79740e}.chroma .go{color:#504945}.chroma .gp{}.chroma .gs{}.chroma .gu{color:#79740e;font-weight:700}.chroma .gt{background-color:#3c3836;font-weight:700}.chroma .gl{}.chroma .w{}
