@@ -7,18 +7,16 @@ date: 2023-08-05
 
 ### Sunday
 
-- 60-90 minutes of Zone 2 cardio.
-
-- Ideally you should get 150-200 minutes of zone 2 cardio, to achive that you should mesh zone 2 cardio with your daily activities.
-
-- Increase difficulty using a weighted vest or backpack
+- 10-minute warmup + 50-60 minutes training
 
 - Exercises:
-  - Jogging
-  - rowing
-  - cycling
-  - swimming
-  - hiking
+  - Dead Lift 1x5
+  - Stiff Leg Deadlift 2x8
+  - Close Grip Incline Barbell Bench Press 3x8,5,12
+  - Chin Up 2x10
+  - Leg Press 3x12
+  - Kroc Row 2x12
+  - Diamond Pushup 1xMAX
 
 ### Monday
 
@@ -68,24 +66,26 @@ date: 2023-08-05
 
 ### Friday
 
+- 60-90 minutes of Zone 2 cardio.
+
+- Ideally you should get 150-200 minutes of zone 2 cardio, to achive that you should mesh zone 2 cardio with your daily activities.
+
+- Increase difficulty using a weighted vest or backpack
+
+- Exercises:
+  - Jogging
+  - rowing
+  - cycling
+  - swimming
+  - hiking
+
+### Saturday
+
 - 10-minute warmup
 
 - 20-60 seconds all-out sprint + 10 seconds rest x 8-12 rounds
 
 - try to get to maximum heart rate
-
-### Saturday
-
-- 10-minute warmup + 50-60 minutes training
-
-- Exercises:
-  - Dead Lift 1x5
-  - Stiff Leg Deadlift 2x8
-  - Close Grip Incline Barbell Bench Press 3x8,5,12
-  - Chin Up 2x10
-  - Leg Press 3x12
-  - Kroc Row 2x12
-  - Diamond Pushup 1xMAX
 
 ## Exerces Snaks
 
