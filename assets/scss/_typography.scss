@@ -1,57 +1,105 @@
-h1,
-h2,
-h3,
-h4,
-h5
-h6 {
-  margin-bottom: 1rem;
-}
-
-p {
-  margin-bottom: 1rem;
-}
-
-img {
-  display: block;
-
-  height: auto;
-  max-width: calc(100% - 1rem);
-
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 1rem;
-
-}
-
-ul,
-ol {
-  margin-left: 2rem;
-  margin-bottom: 1rem;
-
+main {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  img,
+  ul,
+  ol,
   li,
+  pre,
+  blockquote,
+  table,
+  hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
   p {
-    margin-bottom: 0.5rem;
+    line-height: 1.5rem;
+    text-align: justify;
+    text-justify: auto;
+    hyphens: auto;
   }
-}
 
-pre {
-  padding: 1rem;
-  border-radius: 0.5rem;
-  margin-bottom: 1rem;
-  overflow: auto;
-}
+  img {
+    display: block;
 
-a {
-  color: var(--link-color);
-  text-decoration: none;
+    height: auto;
+    max-width: calc(100% - 1rem);
 
-  &:hover {
-    text-decoration: underline;
+    margin-right: auto;
+    margin-left: auto;
+
   }
-}
 
-hr {
-  color: var(--foreground-color-01);
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  ul,
+  ol {
+    margin-left: 2rem;
+  }
+
+  pre {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    overflow: auto;
+
+    code {
+      padding: 0;
+      background-color: var(--foreground-color-01);
+      color: var(--background-color-01);
+    }
+  }
+
+  code {
+    background-color: var(--background-color-02);
+    color: var(--foreground-color-02);
+    padding: 0.1rem 0.2rem;
+    border-radius: 0.2rem;
+  }
+
+  a {
+    color: var(--link-color);
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    // &:where(.external-link)::after {
+    //   content: "↗️";
+    // }
+  }
+
+  table {
+    border-collapse: collapse;
+
+    thead tr {
+      text-align: left;
+      background-color: var(--background-color-02);
+    }
+
+    tbody tr {
+      border-bottom: 2px solid var(--background-color-02);
+    }
+
+    th,
+    td {
+      padding: 1rem;
+    }
+  }
+
+  blockquote {
+    padding: 0.1rem 0.5rem;
+    background-color: var(--background-color-02);
+    border-radius: 0.2rem;
+    border-left: 5px solid var(--blockquote-border-color);
+  }
+
+  hr {
+    color: var(--background-color-03);
+    margin-top: 1rem;
+  }
 }
