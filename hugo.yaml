@@ -6,5 +6,5 @@ taxonomies:
   tag: tags
 
 markup:
-  markup.highlight:
+  highlight:
     noClasses: false
