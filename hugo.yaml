@@ -1,0 +1,10 @@
+baseURL: https://nakibrayan2.pages.dev
+languageCode: en-us
+title: Rayan Nakib's Blog
+
+taxonomies:
+  tag: tags
+
+markup:
+  markup.highlight:
+    noClasses: false
