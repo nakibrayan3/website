@@ -1,6 +1,7 @@
 ---
 title: "Archlinux Install Guide With Full Disk Encryption"
 date: 2023-05-19
+tags: [ guide, archlinux ]
 ---
 
 ## 1. Pre installation

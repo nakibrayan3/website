@@ -1,6 +1,7 @@
 ---
 title: "My fitness Program"
 date: 2023-08-05
+tags: [ Personal, Fitness ]
 ---
 
 ## Fitness Program

@@ -1,6 +1,7 @@
 ---
 title: "Backup and Restore GPG Key"
 date: 2023-05-30
+tags: [ guide, GnuPG, PGP, Encryption ]
 ---
 
 ## 1. Electronic Backups

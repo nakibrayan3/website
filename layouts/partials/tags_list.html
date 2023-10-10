@@ -1,0 +1,9 @@
+{{ if .Params.tags }}
+  <h2>Tags</h2>
+
+  <ul>
+    {{ range (.GetTerms "tags") }}
+    <li><a href="{{ .Permalink }}">#{{ .LinkTitle }}</a></li>
+    {{ end }}
+  </ul>
+{{ end}}

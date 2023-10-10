@@ -1,6 +1,7 @@
 ---
 title: "Archlinux Post Install Guide"
 date: 2023-05-25
+tags: [ guide, archlinux ]
 ---
 
 ## 1. Install Drivers
