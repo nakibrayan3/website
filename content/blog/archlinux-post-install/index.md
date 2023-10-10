@@ -12,11 +12,11 @@ tags: [ guide, archlinux ]
 
 To check if the driver for your card has been loaded, check the output of the `lspci -k` or `lsusb -v` command, depending on if the card is connected by `PCI(e)` or `USB`. You should see that some kernel driver is in use, for example:
 
-```
+```text
 $ lspci -k
 ```
 
-```
+```text
 06:00.0 Network controller: Intel Corporation WiFi Link 5100
 	Subsystem: Intel Corporation WiFi Link 5100 AGN
 	Kernel driver in use: iwlwifi
@@ -27,7 +27,7 @@ $ lspci -k
 
 Also check the output of the `ip link` command to see if a wireless interface was created; usually the naming of the wireless network interfaces starts with the letter "w", e.g. `wlan0` or `wlp2s0`. Then bring the interface up with:
 
-```
+```text
 # ip link set interface up
 ```
 
@@ -39,21 +39,21 @@ Also check the output of the `ip link` command to see if a wireless interface wa
 
 Check kernel messages for firmware being loaded:
 
-```
+```text
 # dmesg | grep firmware
 ```
 
-```
+```text
 [   7.148259] iwlwifi 0000:02:00.0: loaded firmware version 39.30.4.1 build 35138 op_mode iwldvm
 ```
 
 If there is no relevant output, check the messages for the full output for the module you identified earlier (`iwlwifi` in this example) to identify the relevant message or further issues:
 
-```
+```text
 # dmesg | grep iwlwifi
 ```
 
-```
+```text
 [   12.342694] iwlwifi 0000:02:00.0: irq 44 for MSI/MSI-X
 [   12.353466] iwlwifi 0000:02:00.0: loaded firmware version 39.31.5.1 build 35138 op_mode iwldvm
 [   12.430317] iwlwifi 0000:02:00.0: CONFIG_IWLWIFI_DEBUG disabled
@@ -79,7 +79,7 @@ If your wireless card is not listed above, it is likely supported only under Win
 
 Now search for driver in the archlinux repos
 
-```
+```text
 $ pacman -Ss driver_name
 ```
 
@@ -89,11 +89,11 @@ and install the appropriate package
 
 Many laptops have a hardware button (or switch) to turn off the wireless card however, the card can also be blocked by the kernel. This can be handled by rfkill. To show the current status:
 
-```
+```text
 # rfkill
 ```
 
-```
+```text
 ID TYPE      DEVICE      SOFT      HARD
  0 bluetooth hci0   unblocked unblocked
  1 wlan      phy0   unblocked unblocked
@@ -101,7 +101,7 @@ ID TYPE      DEVICE      SOFT      HARD
 
 If the card is hard-blocked, use the hardware button (switch) to unblock it. If the card is not hard-blocked but soft-blocked, use the following command:
 
-```
+```text
 # rfkill unblock wlan
 ```
 
@@ -119,19 +119,19 @@ Follow these steps to configure ndiswrapper.
 
 2. Install the driver to `/etc/ndiswrapper/`:
 
-```
+```text
 # ndiswrapper -i filename.inf
 ```
 
 3. List all installed drivers for ndiswrapper:
 
-```
+```text
 $ ndiswrapper -l
 ```
 
 4. Let ndiswrapper write its configuration in `/etc/modprobe.d/ndiswrapper.conf`:
 
-```
+```text
 # ndiswrapper -m
 # depmod -a
 ```
@@ -145,13 +145,13 @@ Today, all necessary modules loading is handled automatically by udev, so if you
 
 create the file `/etc/modules-load.d/ndiswrapper.conf` and add this line.
 
-```
+```text
 ndiswrapper
 ```
 
 6. Test that ndiswrapper will load now:
 
-```
+```text
 # modprobe ndiswrapper
 # iwconfig
 ```
@@ -164,7 +164,7 @@ These instructions are for those using the stock `linux` or `linux-lts` packages
 
 1. If you do not know what graphics card you have, find out by issuing:
 
-```
+```text
 $ lspci -k | grep -A 2 -E "(VGA|3D)"
 ```
 
@@ -190,7 +190,7 @@ $ lspci -k | grep -A 2 -E "(VGA|3D)"
 
 4. Remove `kms` from the `HOOKS=()` array in `/etc/mkinitcpio.conf` and regenerate the initramfs with the command:
 
-```
+```text
 # mkinitcpio -P
 ```
 
@@ -204,81 +204,81 @@ if you don't know what to chose, just chose `gnome`
 
 ### 2.1 Gnome
 
-```
+```text
 $ sudo pacman -S gnome
 ```
 
-```
+```text
 $ sudo systemctl enable gdm.service
 ```
 
-```
+```text
 $ reboot
 ```
 
 ### 2.2 KDE plasma
 
-```
+```text
 $ sudo pacman -S plasma
 ```
 
-```
+```text
 $ systemctl enable sddm.service
 ```
 
-```
+```text
 $ reboot
 ```
 
 ### 2.3 xfce4
 
-```
+```text
 $ sudo pacman -S xfce4 sddm
 ```
 
-```
+```text
 $ systemctl enable sddm.service
 ```
 
-```
+```text
 $ reboot
 ```
 
 ## 3 Install flatpak
 
-```
+```text
 $ sudo pacman -S flatpak
 ```
 
 ## 4 Install An AUR Helper
 
-```
+```text
 $ sudo pacman -S git rustup
 ```
 
-```
+```text
 $ rustup toolchain install stable
 ```
 
-```
+```text
 $ git clone https://aur.archlinux.org/paru.git
 ```
 
-```
+```text
 $ cd paru
 ```
 
-```
+```text
 $ makepkg -si
 ```
 
 ## 5. install and setup ntp
 
-```
+```text
 $ sudo pacman -S ntp
 ```
 
-```
+```text
 $ timedatectl set-ntp true
 ```
 
