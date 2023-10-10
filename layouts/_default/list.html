@@ -4,7 +4,9 @@
 {{ range .Pages }}
 <ul class="posts-list">
   <li>
+    {{ if .Params.date }}
     <span>{{ .Date.Format "January 2, 2006" }}</span><br>
+    {{ end }}
     <a href="{{ .Permalink }}">{{ .Title }}</a>
   </li>
 </ul>
