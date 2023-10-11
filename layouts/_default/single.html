@@ -1,9 +1,9 @@
 {{ define "main" }}
 
-<h1>{{ .Title }}</h1>
+{{ partial "hgroup" . }}
 
 {{ .Content }}
 
-{{ partial "tags_list.html" . }}
+{{ partial "tags_list" . }}
 
 {{end}}
