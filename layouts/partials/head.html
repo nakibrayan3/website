@@ -5,6 +5,13 @@
 <meta name="description" content="I am Rayan Nakib and this is my website and blog. There’s a lot here, so thanks for stopping by!" />
 <title>Rayan Nakib's Blog</title>
 
+<link
+  rel="alternate"
+  type="application/rss+xml"
+  href="/blog/index.xml"
+  title="Rayan Nakib's Blog"
+>
+
 {{ with resources.Get "avatar.png" }}
 {{ with .Resize (printf "%dx%d webp" .Width .Height) }}
 <link rel="icon" href="{{ .Permalink }}" type="image/x-icon" />
