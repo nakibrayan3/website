@@ -20,9 +20,7 @@ main {
 
   p {
     line-height: 1.5rem;
-    text-align: justify;
-    text-justify: auto;
-    hyphens: auto;
+    font-size: 1.1rem;
   }
 
   img {
@@ -43,7 +41,7 @@ main {
 
   pre {
     padding: 1rem;
-    border-radius: 0.5rem;
+    border-radius: 0.2rem;
     overflow: auto;
 
     code {
