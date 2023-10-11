@@ -9,7 +9,6 @@ tags: [ Personal, Fitness ]
 ### Sunday
 
 - 10-minute warmup + 50-60 minutes training
-
 - Exercises:
   - Dead Lift 1x5
   - Stiff Leg Deadlift 2x8
@@ -22,7 +21,6 @@ tags: [ Personal, Fitness ]
 ### Monday
 
 - 10-minute warmup + 50-60 minutes training.
-
 - Exercises:
   - Squat 1x4
   - Pause Squat 2x5
@@ -35,7 +33,6 @@ tags: [ Personal, Fitness ]
 ### Tuesday
 
 - 10-minute warmup + 50-60 minutes training.
-
 - Exercises:
   - Bench Press 1x5
   - Larsen Press 2x10
@@ -50,7 +47,6 @@ tags: [ Personal, Fitness ]
 ### Wednesday
 
 - 10-minute warmup +50-60 minutes training
-
 - Exercises:
   - Lat Pull Down (Feeder set) 4x10
   - Lat Pull Down (Drop set) 1x10+5
@@ -68,11 +64,8 @@ tags: [ Personal, Fitness ]
 ### Friday
 
 - 60-90 minutes of Zone 2 cardio.
-
 - Ideally you should get 150-200 minutes of zone 2 cardio, to achive that you should mesh zone 2 cardio with your daily activities.
-
 - Increase difficulty using a weighted vest or backpack
-
 - Exercises:
   - Jogging
   - rowing
@@ -83,9 +76,7 @@ tags: [ Personal, Fitness ]
 ### Saturday
 
 - 10-minute warmup
-
 - 20-60 seconds all-out sprint + 10 seconds rest x 8-12 rounds
-
 - try to get to maximum heart rate
 
 ## Exerces Snaks
