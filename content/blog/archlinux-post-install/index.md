@@ -34,7 +34,6 @@ Also check the output of the `ip link` command to see if a wireless interface wa
 **Note:**
 
 - If you get errors like `RTNETLINK answers: Operation not possible due to RF-kill`, make sure that the device is not hard-blocked or soft-blocked. See [#Rfkill caveat](#) for details.
-
 - If you get the error message `SIOCSIFFLAGS: No such file or directory`, it most certainly means that your wireless chipset requires a firmware to function.
 
 Check kernel messages for firmware being loaded:
@@ -68,9 +67,7 @@ If the kernel module is successfully loaded and the interface is up, you can ski
 Check the following lists to discover if your card is supported:
 
 - See the table of [existing Linux wireless drivers](https://wireless.wiki.kernel.org/en/users/drivers) and follow to the specific driver's page, which contains a list of supported devices.
-
 - The [Ubuntu Wiki](https://help.ubuntu.com/community/WifiDocs/WirelessCardsSupported) has a good list of wireless cards and whether or not they are supported either in the Linux kernel or by a user-space driver (includes driver name).
-
 - The Linux Questions' [Hardware Compatibility List](https://web.archive.org/web/20110711100256/http://www.linuxquestions.org/hcl/index.php?cat=10) (HCL) also have a good database of kernel-friendly hardware.
 
 Note that some vendors ship products that may contain different chip sets, even if the product identifier is the same. Only the usb-id (for USB devices) or pci-id (for PCI devices) is authoritative.
@@ -171,7 +168,6 @@ $ lspci -k | grep -A 2 -E "(VGA|3D)"
 2. Determine the necessary driver version for your card by:
 
 - Visiting [NVIDIA's driver download site](https://www.nvidia.com/Download/index.aspx) and using the dropdown lists.
-
 - Finding the code name (e.g. NV50, NVC0, etc.) on [nouveau wiki's code names page](https://nouveau.freedesktop.org/wiki/CodeNames/) or [nouveau's GitLab](https://gitlab.freedesktop.org/nouveau/wiki/-/blob/master/sources/CodeNames.mdwn), then looking up the name in [NVIDIA's legacy card list](https://www.nvidia.com/en-us/drivers/unix/legacy-gpu/): if your card is not there you can use the latest driver.
 
 3. Install the appropriate driver for your card:
@@ -285,5 +281,4 @@ $ timedatectl set-ntp true
 ## 6. Sources
 
 - [ArchLinux Wiki: Network configuration/Wireless](https://wiki.archlinux.org/title/Network_configuration/Wireless)
-
 - [ArchLinux Wiki: NVIDIA](https://wiki.archlinux.org/title/NVIDIA)

@@ -252,5 +252,4 @@ gpg> save
 ## 3. Sources
 
 - [JWillikers: backup and restore a gpg key](https://www.jwillikers.com/backup-and-restore-a-gpg-key)
-
 - [ArchLinux Wiki: Paperkey](https://wiki.archlinux.org/title/Paperkey)

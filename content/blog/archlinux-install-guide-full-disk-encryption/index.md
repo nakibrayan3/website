@@ -129,7 +129,6 @@ If the card is not hard-blocked but soft-blocked, use the following command:
 2. Connect to the network
 
 - with Ethernet plug in the cable.
-
 - or wifi using the iwctl command
 
 To connect to wifi, First you need to get in the `iwctl` interactive prompt with
@@ -642,7 +641,5 @@ Don't forget to set the boot device to the drive that have the archlinux install
 ## 5. Sources
 
 - [ArchLinux Wiki: Install Guide](https://wiki.archlinux.org/title/Installation_guide)
-
 - [ArchLinux Wiki: Network configuration/Wireless rfkill section](https://wiki.archlinux.org/title/Network_configuration/Wireless#Rfkill_caveat)
-
 - [ARchLinux Wiki: Grub](https://wiki.archlinux.org/title/GRUB)
