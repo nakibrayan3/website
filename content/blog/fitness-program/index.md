@@ -8,30 +8,6 @@ tags: [ Personal, Fitness ]
 
 ### Sunday
 
-- 10-minute warmup + 50-60 minutes training
-- Exercises:
-  - Dead Lift 1x5
-  - Stiff Leg Deadlift 2x8
-  - Close Grip Incline Barbell Bench Press 3x8,5,12
-  - Chin Up 2x10
-  - Leg Press 3x12
-  - Kroc Row 2x12
-  - Diamond Pushup 1xMAX
-
-### Monday
-
-- 10-minute warmup + 50-60 minutes training.
-- Exercises:
-  - Squat 1x4
-  - Pause Squat 2x5
-  - Barbell RDL 3x10
-  - Walking Lunge 2x10
-  - Seated Leg Curl 3x12
-  - Leg Press Toe Press 4x12
-  - Decline Plate Weighted Crunch 3x12
-
-### Tuesday
-
 - 10-minute warmup + 50-60 minutes training.
 - Exercises:
   - Bench Press 1x5
@@ -44,7 +20,30 @@ tags: [ Personal, Fitness ]
   - Triceps Overhead Press 3x8
   - N1 Style Cross Body Triceps Extension 2x12
 
+### Monday
+
+- 10-minute warmup
+- 20-60 seconds all-out sprint + 10 seconds rest x 8-12 rounds
+- try to get to maximum heart rate
+
+
+### Tuesday
+
+- 10-minute warmup + 50-60 minutes training.
+- Exercises:
+  - Squat 1x4
+  - Pause Squat 2x5
+  - Barbell RDL 3x10
+  - Walking Lunge 2x10
+  - Seated Leg Curl 3x12
+  - Leg Press Toe Press 4x12
+  - Decline Plate Weighted Crunch 3x12
+
 ### Wednesday
+
+- 35 minutes of moderate intensity cardio, 75-80% of maximum effort.
+
+### Thursday
 
 - 10-minute warmup +50-60 minutes training
 - Exercises:
@@ -56,10 +55,6 @@ tags: [ Personal, Fitness ]
   - Omni-Grip Face Pull 3x15
   - EZ-Bar Curl 3x8
   - Bottom Half Preacher Curl 2x12
-
-### Thursday
-
-- 35 minutes of moderate intensity cardio, 75-80% of maximum effort.
 
 ### Friday
 
@@ -75,9 +70,15 @@ tags: [ Personal, Fitness ]
 
 ### Saturday
 
-- 10-minute warmup
-- 20-60 seconds all-out sprint + 10 seconds rest x 8-12 rounds
-- try to get to maximum heart rate
+- 10-minute warmup + 50-60 minutes training
+- Exercises:
+  - Dead Lift 1x5
+  - Stiff Leg Deadlift 2x8
+  - Close Grip Incline Barbell Bench Press 3x8,5,12
+  - Chin Up 2x10
+  - Leg Press 3x12
+  - Kroc Row 2x12
+  - Diamond Pushup 1xMAX
 
 ## Exerces Snaks
 
