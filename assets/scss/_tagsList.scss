@@ -1,11 +1,11 @@
 div.tags-list {
-  margin-top: 2rem;
 
   a {
+    display: inline-block;
     background-color: var(--button-background-color);
     color: var(--button-foreground-color);
     padding: 1rem;
-    margin: 1rem 0.3rem;
+    margin: 0.5rem 0.3rem;
     border-radius: 0.2rem;
 
     &:hover {
