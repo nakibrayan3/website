@@ -1,0 +1,16 @@
+div.tags-list {
+  margin-top: 2rem;
+
+  a {
+    background-color: var(--button-background-color);
+    color: var(--button-foreground-color);
+    padding: 1rem;
+    margin: 1rem 0.3rem;
+    border-radius: 0.2rem;
+
+    &:hover {
+      text-decoration: none;
+      background-color: var(--button-background-hover-color);
+    }
+  }
+}
