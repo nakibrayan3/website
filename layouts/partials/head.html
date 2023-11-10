@@ -26,6 +26,15 @@
 />
 {{ end }}
 
+{{ $opts := dict "includePaths" (slice "pico/scss") }}
+{{ with resources.Get "scss/pico.scss" | toCSS $opts | minify | fingerprint }}
+<link
+  rel="stylesheet"
+  href="{{ .Permalink }}"
+  integrity="{{ .Data.Integrity }}"
+/>
+{{ end }}
+
 {{ with resources.Get "css/gruvbox-light.css" }}
 <link
   rel="stylesheet"
