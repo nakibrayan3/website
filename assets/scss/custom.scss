@@ -1,0 +1,163 @@
+.intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+
+  @media screen and (max-width: 991px) {
+    flex-direction: column;
+  }
+
+  h1 {
+    margin-bottom: 0;
+  }
+
+  h2 {
+    margin-bottom: 1rem;
+  }
+
+  svg {
+    max-width: 1rem;
+  }
+}
+
+nav ul li a {
+  color: var(--h1-color);
+}
+
+.article-metadata {
+  display: flex;
+  align-items: center;
+  padding-left: 0;
+
+  li {
+    list-style: none;
+    margin-right: 1rem;
+    margin-bottom: 0;
+
+    display: flex;
+    align-items: center;
+
+    svg {
+      margin-right: 0.3rem;
+    } // svg
+  } // li
+} // .article-metadata
+
+hgroup {
+  margin-bottom: 0 !important;
+}
+
+main {
+  padding-top: 0 !important;
+}
+
+header {
+  padding-top: 2.2rem !important;
+}
+
+article {
+  margin-top: 2rem !important;
+}
+
+
+nav {
+  align-items: center;
+
+  label{
+    cursor: pointer;
+
+    div {
+      display: none;
+      width: 2rem;
+      height: 0.3rem;
+      background-color: white;
+      margin-top: 0.2rem;
+      margin-bottom: 0.3rem;
+      border-radius: 0.3rem;
+
+      @media screen and (max-width: 991px) {
+        display: block;
+      }
+    }
+  }
+
+  .nav-links {
+    label {
+      float: right;
+      direction: rtl;
+      margin-right: 1.87rem;
+      padding-top: 0;
+    }
+
+    @media screen and (max-width: 991px) {
+      flex-direction: column;
+      position: fixed;
+      background: #141e25;
+      height: 100vh;
+      top: 0;
+      right: -100%;
+      width: 50%;
+      transition: ease-in-out 400ms;
+      padding-top: 13px;
+      border-radius: 0;
+      align-items: normal;
+      text-align: center;
+    }
+  }
+
+  #hamburger-check:checked ~ .nav-links {
+    @media screen and (max-width: 991px) {
+      right: 0;
+    }
+  }
+}
+
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+
+  .privacy-terms-of-service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  svg {
+    margin: 0 0.5rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  footer {
+    flex-direction: column;
+
+    p {
+      margin-bottom: 2rem;
+    }
+
+    .privacy-terms-of-service {
+      margin-bottom: 2rem;
+
+      a {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}

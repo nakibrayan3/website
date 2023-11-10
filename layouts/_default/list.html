@@ -2,7 +2,7 @@
 <h1>{{ .Title }}</h1>
 
 {{ range .Pages }}
-<ul class="posts-list">
+<ul>
   <li>
     {{ if .Params.date }}
     <span>{{ .Date.Format "January 2, 2006" }}</span><br>

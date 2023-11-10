@@ -18,7 +18,8 @@
 {{ end }}
 {{ end }}
 
-{{ with resources.Get "scss/main.scss" | toCSS | minify | fingerprint }}
+{{ $opts := dict "includePaths" (slice "pico/scss") }}
+{{ with resources.Get "scss/pico.scss" | toCSS $opts | minify | fingerprint }}
 <link
   rel="stylesheet"
   href="{{ .Permalink }}"
@@ -26,8 +27,7 @@
 />
 {{ end }}
 
-{{ $opts := dict "includePaths" (slice "pico/scss") }}
-{{ with resources.Get "scss/pico.scss" | toCSS $opts | minify | fingerprint }}
+{{ with resources.Get "scss/custom.scss" | toCSS | minify | fingerprint }}
 <link
   rel="stylesheet"
   href="{{ .Permalink }}"
