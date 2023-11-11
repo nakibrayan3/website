@@ -1,0 +1,27 @@
+hgroup {
+  margin-bottom: 0;
+
+  ul {
+  display: flex;
+  align-items: center;
+  padding-left: 0;
+
+  @media screen and (max-width: 500px) {
+    flex-direction: column;
+    align-items: normal;
+  }
+
+    li {
+      list-style: none;
+      margin-right: 1rem;
+      margin-bottom: 0;
+
+      display: flex;
+      align-items: center;
+
+      svg {
+        margin-right: 0.3rem;
+      } // svg
+    } // li
+  } // ul
+} //hgroup

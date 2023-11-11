@@ -18,29 +18,6 @@ header {
   margin-bottom: 2rem !important;
 }
 
-hgroup {
-  margin-bottom: 0;
-
-  ul {
-  display: flex;
-  align-items: center;
-  padding-left: 0;
-
-    li {
-      list-style: none;
-      margin-right: 1rem;
-      margin-bottom: 0;
-
-      display: flex;
-      align-items: center;
-
-      svg {
-        margin-right: 0.3rem;
-      } // svg
-    } // li
-  } // ul
-} //hgroup
-
 img {
   display: block;
   margin-right: auto;
