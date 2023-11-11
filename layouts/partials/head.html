@@ -18,8 +18,7 @@
 {{ end }}
 {{ end }}
 
-{{ $opts := dict "includePaths" (slice "pico/scss") }}
-{{ with resources.Get "scss/pico.scss" | toCSS $opts | minify | fingerprint }}
+{{ with resources.Get "scss/pico/scss/pico.scss" | toCSS (dict "transpiler" "dartsass") | minify | fingerprint }}
 <link
   rel="stylesheet"
   href="{{ .Permalink }}"
@@ -27,7 +26,7 @@
 />
 {{ end }}
 
-{{ with resources.Get "scss/custom.scss" | toCSS | minify | fingerprint }}
+{{ with resources.Get "scss/custom/main.scss" | toCSS (dict "transpiler" "dartsass") | minify | fingerprint }}
 <link
   rel="stylesheet"
   href="{{ .Permalink }}"
@@ -35,7 +34,7 @@
 />
 {{ end }}
 
-{{ with resources.Get "css/gruvbox-light.css" }}
+{{ with resources.Get "css/catppuccin-frappe.css" }}
 <link
   rel="stylesheet"
   href="{{ .Permalink }}"
@@ -43,7 +42,7 @@
 />
 {{ end }}
 
-{{ with resources.Get "css/gruvbox-dark.css" }}
+{{ with resources.Get "css/catppuccin-latte.css" }}
 <link
   rel="stylesheet"
   href="{{ .Permalink }}"

@@ -1,0 +1,26 @@
+.intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+
+  @media screen and (max-width: 991px) {
+    flex-direction: column;
+  }
+
+  h1 {
+    margin-bottom: 0;
+  }
+
+  h2 {
+    margin-bottom: 1rem;
+  }
+
+  svg {
+    max-width: 1rem;
+  }
+
+  img {
+    margin: 0
+  }
+}

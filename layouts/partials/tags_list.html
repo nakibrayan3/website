@@ -1,7 +1,9 @@
 {{ if .Params.tags }}
-<div>
+<h2>Tags</h2>
+
+<div class="tags-list">
   {{ range (.GetTerms "tags") }}
-  <a role="button" href="{{ .Permalink }}">{{ .LinkTitle }}</a>
+  <a role="button" href="{{ .Permalink }}">#{{ .LinkTitle }}</a>
   {{ end }}
-<div>
+</div>
 {{ end}}

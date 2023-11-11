@@ -8,10 +8,10 @@ let dataTheme = document.querySelector("html").getAttribute("data-theme");
 function set_theme(theme) {
   if (theme == "light") {
     document.querySelector("html").setAttribute("data-theme", "light");
-    preCss.href = "/css/gruvbox-dark.css";
+    preCss.href = "/css/catppuccin-latte.css";
   } else if(theme == "dark") {
     document.querySelector("html").setAttribute("data-theme", "dark");
-    preCss.href = "/css/gruvbox-light.css";
+    preCss.href = "/css/catppuccin-frappe.css";
   }
 }
 
