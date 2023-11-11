@@ -1,0 +1,12 @@
+<div class="intro">
+  <div>
+    <h1>Rayan Nakib's Blog</h1>
+    <p>I'm a developer who works in open source</p>
+  </div>
+
+  {{ with resources.Get "avatar.png" }}
+  {{ with .Resize (printf "%dx%d webp" .Width .Height) }}
+  <img src="{{ .Permalink }}" alt="Avatar" width="{{ .Width }}" height="{{ .Height }}" />
+  {{ end }}
+  {{ end }}
+</div>

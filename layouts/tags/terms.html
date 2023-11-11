@@ -3,9 +3,9 @@
 <h1>{{ .Title }}</h1>
 
 <div class="tags-list">
-  {{ range .Pages }}
-  <a href="{{ .Permalink }}">{{ .LinkTitle }}</a>
-  {{ end }}
-<div>
+{{ range .Pages }}
+<a class="tag" role="button" href="{{ .Permalink }}">#{{ .LinkTitle }}</a>
+{{ end }}
+</div>
 
 {{ end }}

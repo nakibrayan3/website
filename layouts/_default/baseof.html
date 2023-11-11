@@ -5,10 +5,14 @@
   </head>
 
   <body>
-    {{ partial "header.html" }}
+    {{ partial "nav" }}
 
-    <main>
-      {{ block "main" . }}{{ end }}
+    <main class="container">
+      <article>
+        {{ block "main" . }}{{ end }}
+
+        {{ partial "footer" }}
+      </article>
     </main>
 
     {{ with resources.Get "js/theme-switcher.js" }}
