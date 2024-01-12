@@ -18,7 +18,7 @@
 {{ end }}
 {{ end }}
 
-{{ with resources.Get "scss/pico/scss/pico.scss" | toCSS (dict "transpiler" "dartsass") | minify | fingerprint }}
+{{ with resources.Get "scss/pico-1.5.11/pico.scss" | toCSS (dict "transpiler" "dartsass") | minify | fingerprint }}
 <link
   rel="stylesheet"
   href="{{ .Permalink }}"
