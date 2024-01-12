@@ -2,9 +2,8 @@ baseURL: https://nakibrayan2.pages.dev
 languageCode: en-us
 title: Rayan Nakib's Blog
 
-author:
-  email: rayan.nakib@tutamail.com
-  name: Rayan Nakib
+params.author.email: rayan.nakib@tutamail.com
+params.author.name: Rayan Nakib
 
 copyright: © 2023 Rayan Nakib
 
