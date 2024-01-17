@@ -7,11 +7,11 @@ footer {
     flex-direction: column;
   }
 
-  p {
+  small {
     margin: 0;
 
     @media screen and (max-width: 500px) {
-      margin-bottom: 1rem;
+      margin-bottom: 2rem;
     }
   }
 
