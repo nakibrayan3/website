@@ -1,0 +1,28 @@
+hgroup {
+  margin-bottom: 0;
+
+  ul {
+  display: flex;
+  align-items: center;
+  padding: 0;
+
+  @media screen and (max-width: 500px) {
+    flex-direction: column;
+    align-items: normal;
+  }
+
+    li {
+      list-style: none;
+      margin-inline-end: 1rem;
+      margin-bottom: 0;
+
+      display: flex;
+      align-items: center;
+
+      svg {
+        margin-right: 0.2rem;
+        margin-left: 0.2rem;
+      } // svg
+    } // li
+  } // ul
+} //hgroup

@@ -1,0 +1,18 @@
+{{ define "main" }}
+
+{{ partial "intro.html" . }}
+
+<h2 style="margin-bottom: 1rem">{{ i18n "posts" }}</h2>
+
+{{ range (where site.RegularPages "Section" "blog") }}
+<ul>
+  <li>
+    {{ if .Params.date }}
+    <span>{{ .Date | time.Format ":date_long" }}</span><br>
+    {{ end }}
+    <a href="{{ .Permalink }}">{{ .Title }}</a>
+  </li>
+</ul>
+{{ end }}
+
+{{ end }}

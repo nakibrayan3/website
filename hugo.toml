@@ -1,0 +1,82 @@
+theme = "main"
+
+basepageRef = "https://nakibrayan2.pages.dev"
+
+defaultContentLanguage = "ar"
+defaultContentLanguageInSubdir = true
+
+[languages]
+  [languages.ar]
+    contentDir = "content/Arabic"
+    disabled = false
+    languageCode = "ar-AR"
+    languageDirection = "rtl"
+    languageName = "العربية"
+    copyright= "© 2024-2023 ريان نقيب ، جميع الحقوق محفوظة"
+    title = "ريان نقيب"
+    weight = 1
+
+    [languages.ar.params]
+      introTitle = "مدونة ريان نقيب"
+      introSubtitle = "مطور برمجيات مفتوحة المصدر"
+
+    [[languages.ar.menu.main]]
+        name = "تبرع"
+        pageRef = "donate"
+        weight = 1
+
+    [[languages.ar.menu.main]]
+        name = "إتصل"
+        pageRef = "contact"
+        weight = 2
+
+    [[languages.ar.menu.main]]
+        name = "المشاريع"
+        pageRef = "projects"
+        weight = 3
+
+    [[languages.ar.menu.main]]
+        name = "العلامات"
+        pageRef = "tags"
+        weight = 4
+
+  [languages.en]
+    contentDir = "content/English"
+    disabled = false
+    languageCode = "en-US"
+    languageDirection = "ltr"
+    languageName = "English"
+    copyright= "© 2023-2024 Rayan Nakib, All Rights Reserved"
+    title = "Rayan Nakib"
+    weight = 2
+
+    [languages.en.params]
+      introTitle = "Rayan Nakib's Blog"
+      introSubtitle = "A developer who works on open source"
+
+    [[languages.en.menu.main]]
+        name = "Donate"
+        pageRef = "donate"
+        weight = 1
+
+    [[languages.en.menu.main]]
+        name = "Contact"
+        pageRef = "contact"
+        weight = 2
+
+    [[languages.en.menu.main]]
+        name = "Projects"
+        pageRef = "projects"
+        weight = 3
+
+    [[languages.en.menu.main]]
+        name = "Tags"
+        pageRef = "tags"
+        weight = 4
+
+[taxonomies]
+  tag = "tags"
+
+[markup]
+  [highlight]
+    noClasses = false

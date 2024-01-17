@@ -1,0 +1,13 @@
+posts:
+  other: Posts
+
+tags:
+  other: Tags
+
+readingTime:
+  one: 'One minute'
+  other: '{{ .Count }} minutes'
+
+wordCount:
+  one : 'One word'
+  other: '{{ .Count }} words'

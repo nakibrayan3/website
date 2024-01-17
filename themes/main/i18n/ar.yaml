@@ -1,0 +1,17 @@
+posts:
+  other: المنشورات
+
+tags:
+  other: العلامات
+
+readingTime:
+  one: دقيقة واحدة
+  two: دقيقتين
+  few: '{{ .Count }} دقائق'
+  other: '{{ .Count }} دقيقة'
+
+wordCount:
+  one: كلمة واحدة
+  two: كلمتان
+  few: '{{ .Count }} كلمات'
+  other: '{{ .Count }} كلمة'

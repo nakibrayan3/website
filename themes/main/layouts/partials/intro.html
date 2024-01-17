@@ -1,0 +1,12 @@
+<div class="intro">
+  <div>
+    <h1>{{ site.Params.introTitle }}</h1>
+    <p>{{ site.Params.introSubtitle }}</p>
+  </div>
+
+  {{ with resources.Get "avatar.png" }}
+  {{ with .Resize (printf "%dx%d webp" .Width .Height) }}
+  <img src="{{ .Permalink }}" alt="Avatar" width="{{ .Width }}" height="{{ .Height }}" />
+  {{ end }}
+  {{ end }}
+</div>
