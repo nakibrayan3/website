@@ -1,0 +1,11 @@
+{{ define "main" }}
+
+<h1>{{ i18n "tags" }}</h1>
+
+<div class="tags-list">
+{{ range .Pages }}
+<a class="tag" role="button" href="{{ .Permalink }}">#{{ .LinkTitle }}</a>
+{{ end }}
+</div>
+
+{{ end }}

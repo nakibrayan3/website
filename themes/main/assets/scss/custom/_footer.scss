@@ -1,0 +1,28 @@
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media screen and (max-width: 500px) {
+    flex-direction: column;
+  }
+
+  small {
+    margin: 0;
+
+    @media screen and (max-width: 500px) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  svg {
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+
+  }
+}
+
