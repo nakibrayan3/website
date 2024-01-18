@@ -3,7 +3,7 @@ theme = "main"
 basepageRef = "https://nakibrayan2.pages.dev"
 
 defaultContentLanguage = "ar"
-defaultContentLanguageInSubdir = true
+defaultContentLanguageInSubdir = false
 
 [languages]
   [languages.ar]
