@@ -7,7 +7,7 @@ defaultContentLanguageInSubdir = true
 
 [languages]
   [languages.ar]
-    contentDir = "content/Arabic"
+    # contentDir = "content/ar"
     disabled = false
     languageCode = "ar-AR"
     languageDirection = "rtl"
@@ -41,7 +41,7 @@ defaultContentLanguageInSubdir = true
         weight = 4
 
   [languages.en]
-    contentDir = "content/English"
+    # contentDir = "content/en"
     disabled = false
     languageCode = "en-US"
     languageDirection = "ltr"
