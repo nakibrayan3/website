@@ -1,6 +1,6 @@
 <nav class="container-fluid">
   <ul>
-    <li><a href="{{ .Lang.Permalink }}">{{ site.Title }}</a></li>
+    <li><a href="{{ site.Home.Permalink }}">{{ site.Title }}</a></li>
   </ul>
   
   <input type="checkbox" id="hamburger-check" hidden />
@@ -21,11 +21,8 @@
     <li><a href="{{ .URL }}">{{ .Name }}</a></li>
     {{ end }}
 
-
-    {{ range site.Languages }}
-    {{ if not (eq .Lang site.Language.Lang) }}
-    <li><a href="/{{ .Lang }}" lang="{{ .Lang }}">{{ default .Lang .LanguageName }}</a></li>
-    {{ end }}
+    {{ range site.Home.Translations }}
+    <li><a href="{{ .RelPermalink }}">{{ .Language.LanguageName }}</a></li>
     {{ end }}
 
     <li id="theme-switch-button" style="cursor: pointer">
