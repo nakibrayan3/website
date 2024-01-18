@@ -1,14 +1,6 @@
 {{ define "main" }}
 <h1>{{ .Title }}</h1>
 
-{{ range .Pages }}
-<ul>
-  <li>
-    {{ if .Params.date }}
-    <span>{{ .Date | time.Format ":date_long" }}</span><br>
-    {{ end }}
-    <a href="{{ .Permalink }}">{{ .Title }}</a>
-  </li>
-</ul>
-{{ end }}
+{{ partial "blog-card.html" }}
+
 {{ end }}
