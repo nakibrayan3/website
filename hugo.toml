@@ -17,7 +17,7 @@ defaultContentLanguageInSubdir = false
     weight = 1
 
     [languages.ar.params]
-      introTitle = "مدونة ريان نقيب"
+      introTitle = "الترجمان ريان نقيب"
       introSubtitle = "مطور برمجيات مفتوحة المصدر"
 
     [[languages.ar.menu.main]]
