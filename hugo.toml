@@ -12,11 +12,12 @@ defaultContentLanguageInSubdir = true
     languageCode = "ar-AR"
     languageDirection = "rtl"
     languageName = "العربية"
-    copyright= "© 2024-2023 ريان نقيب ، جميع الحقوق محفوظة"
+    copyright = "© 2024-2023 ريان نقيب ، جميع الحقوق محفوظة"
     title = "ريان نقيب"
     weight = 1
 
     [languages.ar.params]
+      siteDescription = "أنا نقيب ريان وهذا موقعو ومدونتي. يوجد الكثير هنا، اذا شكرا لزيارتك!"
       introTitle = "الترجمان ريان نقيب"
       introSubtitle = "مطور برمجيات مفتوحة المصدر"
 
@@ -51,6 +52,7 @@ defaultContentLanguageInSubdir = true
     weight = 2
 
     [languages.en.params]
+      siteDescription = "I am Rayan Nakib and this is my website and blog. There’s a lot here, so thanks for stopping by!"
       introTitle = "Rayan Nakib's Blog"
       introSubtitle = "A developer who works on open source"
 
