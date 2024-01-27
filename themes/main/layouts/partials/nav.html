@@ -21,8 +21,8 @@
     <li><a href="{{ .URL }}">{{ .Name }}</a></li>
     {{ end }}
 
-    {{ range site.Home.Translations }}
-    <li><a href="{{ .RelPermalink }}">{{ .Language.LanguageName }}</a></li>
+    {{ range page.Translations }}
+    <li><a href="{{ .RelPermalink }}" lang="{{ .Lang }}">{{ .Language.LanguageName }}</a></li>
     {{ end }}
 
     <li id="theme-switch-button" style="cursor: pointer">
