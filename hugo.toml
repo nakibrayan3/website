@@ -3,11 +3,11 @@ theme = "main"
 basepageRef = "https://nakibrayan2.pages.dev"
 
 defaultContentLanguage = "ar"
-defaultContentLanguageInSubdir = false
+defaultContentLanguageInSubdir = true
 
 [languages]
   [languages.ar]
-    # contentDir = "content/ar"
+    contentDir = "content/ar"
     disabled = false
     languageCode = "ar-AR"
     languageDirection = "rtl"
@@ -41,7 +41,7 @@ defaultContentLanguageInSubdir = false
         weight = 4
 
   [languages.en]
-    # contentDir = "content/en"
+    contentDir = "content/en"
     disabled = false
     languageCode = "en-US"
     languageDirection = "ltr"
