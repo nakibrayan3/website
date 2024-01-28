@@ -18,6 +18,10 @@
 {{ end }}
 {{ end }}
 
+{{ with resources.Get "js/theme-toggle.js" }}
+<script src="{{ .Permalink }}"></script>
+{{ end }}
+
 {{ with resources.Get "scss/pico-1.5.11/pico.scss" | toCSS (dict "transpiler" "dartsass") | minify | fingerprint }}
 <link
   rel="stylesheet"
@@ -31,22 +35,5 @@
   rel="stylesheet"
   href="{{ .Permalink }}"
   integrity="{{ .Data.Integrity }}"
-/>
-{{ end }}
-
-{{ with resources.Get "css/catppuccin-frappe.css" }}
-<link
-  rel="stylesheet"
-  href="{{ .Permalink }}"
-  media="(prefers-color-scheme: dark)"
-/>
-{{ end }}
-
-{{ with resources.Get "css/catppuccin-latte.css" }}
-<link
-  rel="stylesheet"
-  href="{{ .Permalink }}"
-  media="(prefers-color-scheme: light)"
-  id="pre-css"
 />
 {{ end }}

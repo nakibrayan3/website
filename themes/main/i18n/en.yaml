@@ -11,3 +11,6 @@ readingTime:
 wordCount:
   one : 'One word'
   other: '{{ .Count }} words'
+
+themeToggleButtonTitle:
+  other: 'Toggles light & dark theme'
