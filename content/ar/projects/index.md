@@ -1,5 +1,5 @@
 ---
-title: "مشاريعي الخاصة"
+title: "مشاريعي"
 ---
 
 - [website](https://codeberg.org/nakibrayan2/website)

@@ -73,7 +73,7 @@
         </svg>
 
         {{ if eq .Site.Language.Lang "ar" }}
-        {{ partial "digits-english-to-arabic.html" (i18n "readingTime" .WordCount) }}
+        {{ partial "digits-english-to-arabic.html" (i18n "wordCount" .WordCount) }}
         {{ else }}
         {{ i18n "readingTime" .WordCount }}
         {{ end }}

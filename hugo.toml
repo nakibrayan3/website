@@ -22,22 +22,22 @@ defaultContentLanguageInSubdir = true
       introSubtitle = "مطور برمجيات مفتوحة المصدر"
 
     [[languages.ar.menu.main]]
-        name = "تبرع"
+        name = "تبرّع"
         pageRef = "donate"
         weight = 1
 
     [[languages.ar.menu.main]]
-        name = "إتصل"
+        name = "اتصل"
         pageRef = "contact"
         weight = 2
 
     [[languages.ar.menu.main]]
-        name = "المشاريع"
+        name = "مشاريعي"
         pageRef = "projects"
         weight = 3
 
     [[languages.ar.menu.main]]
-        name = "العلامات"
+        name = "الوسوم"
         pageRef = "tags"
         weight = 4
 
