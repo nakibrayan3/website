@@ -80,5 +80,5 @@ defaultContentLanguageInSubdir = true
   tag = "tags"
 
 [markup]
-  [highlight]
+  [markup.highlight]
     noClasses = false
