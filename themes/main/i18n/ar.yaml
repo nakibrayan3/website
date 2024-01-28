@@ -15,3 +15,6 @@ wordCount:
   two: كلمتان
   few: '{{ .Count }} كلمات'
   other: '{{ .Count }} كلمة'
+
+themeToggleButtonTitle:
+  other: 'بدّل بين سمة داكنة وفاتحة'
