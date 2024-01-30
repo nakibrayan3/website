@@ -1,20 +1,26 @@
 posts:
-  other: المنشورات
+  other: "المنشورات"
 
 tags:
-  other: العلامات
+  other: "العلامات"
 
 readingTime:
-  one: دقيقة واحدة
-  two: دقيقتين
-  few: '{{ .Count }} دقائق'
-  other: '{{ .Count }} دقيقة'
+  one: "دقيقة واحدة"
+  two: "دقيقتين"
+  few: "{{ .Count }} دقائق"
+  other: "{{ .Count }} دقيقة"
 
 wordCount:
-  one: كلمة واحدة
-  two: كلمتان
-  few: '{{ .Count }} كلمات'
-  other: '{{ .Count }} كلمة'
+  one: "كلمة واحدة"
+  two: "كلمتان"
+  few: "{{ .Count }} كلمات"
+  other: "{{ .Count }} كلمة"
 
 themeToggleButtonTitle:
-  other: 'بدّل بين سمة داكنة وفاتحة'
+  other: "بدّل بين سمة داكنة وفاتحة"
+
+404_error_title:
+  other: " لم يُعثر على الصفحة "
+
+404_error_message:
+  other: "الصفحة التي طلبت غير موجودة."

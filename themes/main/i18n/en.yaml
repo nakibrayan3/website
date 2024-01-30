@@ -1,16 +1,22 @@
 posts:
-  other: Posts
+  other: "Posts"
 
 tags:
-  other: Tags
+  other: "Tags"
 
 readingTime:
-  one: 'One minute'
-  other: '{{ .Count }} minutes'
+  one: "One minute"
+  other: "{{ .Count }} minutes"
 
 wordCount:
-  one : 'One word'
-  other: '{{ .Count }} words'
+  one : "One word"
+  other: "{{ .Count }} words"
 
 themeToggleButtonTitle:
-  other: 'Toggles light & dark theme'
+  other: "Toggles light & dark theme"
+
+404_error_title:
+  other: "Page not found"
+
+404_error_message:
+  other: "The page you requested doesn't exist."
