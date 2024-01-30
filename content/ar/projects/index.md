@@ -1,6 +1,7 @@
----
-title: "مشاريعي"
----
++++
+title = "مشاريعي"
+url = "مشاريعي"
++++
 
 - [website](https://codeberg.org/nakibrayan2/website)
 - [neovim-config](https://codeberg.org/nakibrayan2/neovim-config)
