@@ -21,8 +21,28 @@
     <li><a href="{{ .URL }}">{{ .Name }}</a></li>
     {{ end }}
 
-    {{ range page.Translations }}
-    <li><a href="{{ .RelPermalink }}" lang="{{ .Lang }}">{{ .Language.LanguageName }}</a></li>
+    {{ if page.IsTranslated }}
+      {{ range page.Translations }}
+      <li>
+        <a
+          href="{{ .RelPermalink }}"
+          lang="{{ .Lang }}"
+        >
+          {{ .Language.LanguageName }}
+        </a>
+      </li>
+      {{ end }}
+    {{ else }}
+      {{ range site.Home.Translations }}
+      <li>
+        <a
+          href="{{ .RelPermalink }}"
+          lang="{{ .Lang }}"
+        >
+          {{ .Language.LanguageName }}
+        </a>
+      </li>
+      {{ end }}
     {{ end }}
 
     <li>
