@@ -20,3 +20,6 @@ themeToggleButtonTitle:
 
 404_error_message:
   other: "The page you requested doesn't exist."
+
+TableOfContents:
+  other: "Table of contents"

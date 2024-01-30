@@ -24,3 +24,6 @@ themeToggleButtonTitle:
 
 404_error_message:
   other: "الصفحة التي طلبت غير موجودة."
+
+TableOfContents:
+  other: "جدول المحتويات"

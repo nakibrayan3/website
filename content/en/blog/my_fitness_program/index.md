@@ -3,6 +3,7 @@ title = 'My fitness Program'
 date = 2023-11-10
 description = 'In this article i list the Exerces that i do through out the week, and other protocols that i use to improve my physical health, and also the suppliments that i use.'
 tags = [ 'Fitness' ]
+toc = true
 +++
 
 ## Fitness Program
