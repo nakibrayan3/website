@@ -22,7 +22,14 @@
 <script src="{{ .Permalink }}"></script>
 {{ end }}
 
-{{ with resources.Get "scss/pico-1.5.11/pico.scss" | toCSS (dict "transpiler" "dartsass") | minify | fingerprint }}
+{{ $picoOpts := dict
+  "transpiler" "dartsass"
+  "targetPath" "css/pico.css"
+  "outputStyle" "compressed"
+  "enableSourceMap" "true"
+}}
+
+{{ with resources.Get "scss/pico-1.5.11/pico.scss" | toCSS $picoOpts | minify | fingerprint }}
 <link
   rel="stylesheet"
   href="{{ .Permalink }}"
@@ -30,7 +37,14 @@
 />
 {{ end }}
 
-{{ with resources.Get "scss/custom/main.scss" | toCSS (dict "transpiler" "dartsass") | minify | fingerprint }}
+{{ $customOpts := dict
+  "transpiler" "dartsass"
+  "targetPath" "css/custom.css"
+  "outputStyle" "compressed"
+  "enableSourceMap" "true"
+}}
+
+{{ with resources.Get "scss/custom/main.scss" | toCSS $customOpts | minify | fingerprint }}
 <link
   rel="stylesheet"
   href="{{ .Permalink }}"
