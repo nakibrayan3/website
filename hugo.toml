@@ -2,6 +2,8 @@ theme = "main"
 
 basepageRef = "https://nakibrayan2.pages.dev"
 
+enableRobotsTXT = true
+
 defaultContentLanguage = "ar"
 defaultContentLanguageInSubdir = true
 
