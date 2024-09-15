@@ -11,8 +11,8 @@ title: تواصل معي
 
 ## البريد الإلكتروني
 
-- [rayan.nakib@tutamail.com](mailto:rayan.nakib@tutamail.com)
+- [nakibrayan@disroot.org](mailto:nakibrayan@disroot.org)
 
-- نزّل [مفتاح PGP العام](/assets/A9A28F3FC427432A9C985BF98F441CF5AE5DAED5.asc) لتعمية البريد الإلكتروني (المفتاح صالح قبل: 31 مايو 2025).
+- نزّل [مفتاح PGP العام](/assets/A9A28F3FC427432A9C985BF98F441CF5AE5DAED5.asc) لتعمية البريد الإلكتروني (المفتاح صالح قبل: 14 سبتمبر 2025).
 
-- بصمة المفتاح: A9A2 8F3F C427 432A 9C98  5BF9 8F44 1CF5 AE5D AED5
+- بصمة المفتاح: 8010 3813 3C9B 4983 05FD  6FFD 5E1A E963 5F53 2C4A
