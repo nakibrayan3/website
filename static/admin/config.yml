@@ -1,0 +1,391 @@
+backend:
+  name: gitea
+  repo: nakibrayan/website
+  app_id: d71565a5-f1eb-4ceb-8d7c-3e70305eeaa3
+  api_root: https://git.disroot.org/api/v1/
+  base_url: https://git.disroot.org/
+  auth_endpoint: https://git.disroot.org/login/oauth/authorize/
+  branch: main
+
+media_folder: "static/assets"
+
+i18n:
+  structure: multiple_files
+  locales: [en, ar]
+  default_locale: en
+
+collections:
+  - name: "microblog"
+    label: "Microblog"
+    folder: "content/microblog"
+    create: true
+    delete: true
+    i18n: true
+    editor:
+      preview: false
+    slug: "{{slug}}"
+    fields:
+      - label: "Title"
+        name: "title"
+        widget: "datetime"
+        format: "YYYY-MM-DDTHH-mm-ssZZ"
+        default: "{{now}}"
+        i18n: duplicate 
+
+      - label: "Publish Date"
+        name: "date"
+        widget: "datetime"
+        format: "YYYY-MM-DDTHH:mm:ssZ"
+        default: "{{now}}"
+        i18n: duplicate
+
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
+        i18n: true
+
+  - name: "blog"
+    label: "Blog"
+    folder: "content/blog"
+    create: true
+    delete: true
+    i18n: true
+    editor:
+      preview: false
+    slug: "{{slug}}"
+    fields:
+      - label: "Draft"
+        name: "draft"
+        widget: "boolean"
+        default: true
+        i18n: true
+
+      - label: "Title"
+        name: "title"
+        widget: "string"
+        i18n: true
+
+      - label: "Publish Date"
+        name: "date"
+        widget: "datetime"
+        format: "YYYY-MM-DD"
+        i18n: true
+
+      - label: "Updated Date"
+        name: "lastmod"
+        widget: "datetime"
+        format: "YYYY-MM-DD"
+        required: false
+        i18n: true
+
+      - label: "Tags"
+        name: "tags"
+        widget: "list"
+        i18n: true
+   
+      - label: "Description"
+        name: "description"
+        widget: "text"
+        i18n: true
+
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
+        required: false
+        i18n: true
+
+  - name: "now"
+    label: "Now"
+    files:
+      - label: "Now"
+        name: "now-en"
+        file: "content/now/index.en.md"
+        editor:
+          preview: false
+        fields:
+          - label: "Title"
+            name: "title"
+            widget: "string"
+
+          - label: "Publish Date"
+            name: "date"
+            widget: "datetime"
+            format: "YYYY-MM-DD"
+            default: "{{now}}"
+
+          - label: "Body"
+            name: "body"
+            widget: "markdown"
+
+      - label: "الآن"
+        name: "now-ar"
+        file: "content/now/index.ar.md"
+        editor:
+          preview: false
+        fields:
+          - label: "Title"
+            name: "title"
+            widget: "string"
+
+          - label: "Publish Date"
+            name: "date"
+            widget: "datetime"
+            format: "YYYY-MM-DD"
+            default: "{{now}}"
+
+          - label: "Body"
+            name: "body"
+            widget: "markdown"
+
+  - name: "uses"
+    label: "Uses"
+    files:
+      - label: "Uses"
+        name: "uses-en"
+        file: "content/uses/index.en.md"
+        editor:
+          preview: false
+        fields:
+          - label: "Title"
+            name: "title"
+            widget: "string"
+
+          - label: "Publish Date"
+            name: "date"
+            widget: "datetime"
+            format: "YYYY-MM-DD"
+            default: "{{now}}"
+
+          - label: "Body"
+            name: "body"
+            widget: "markdown"
+
+      - label: "يستعمل"
+        name: "uses-ar"
+        file: "content/uses/index.ar.md"
+        editor:
+          preview: false
+        fields:
+          - label: "Title"
+            name: "title"
+            widget: "string"
+
+          - label: "Publish Date"
+            name: "date"
+            widget: "datetime"
+            format: "YYYY-MM-DD"
+            default: "{{now}}"
+
+          - label: "Body"
+            name: "body"
+            widget: "markdown"
+
+  - name: "personal_library"
+    label: "Personal Library"
+    files:
+      - label: "Personal Library"
+        name: "personal_library-en"
+        file: "content/personal_library/index.en.md"
+        editor:
+          preview: false
+        fields:
+          - label: "Title"
+            name: "title"
+            widget: "string"
+
+          - label: "Publish Date"
+            name: "date"
+            widget: "datetime"
+            format: "YYYY-MM-DD"
+            default: "{{now}}"
+
+          - label: "Body"
+            name: "body"
+            widget: "markdown"
+
+      - label: "مكتبتي الشخصية"
+        name: "personal_library-ar"
+        file: "content/personal_library/index.ar.md"
+        editor:
+          preview: false
+        fields:
+          - label: "Title"
+            name: "title"
+            widget: "string"
+
+          - label: "Publish Date"
+            name: "date"
+            widget: "datetime"
+            format: "YYYY-MM-DD"
+            default: "{{now}}"
+
+          - label: "Body"
+            name: "body"
+            widget: "markdown"
+
+  - name: "blogroll"
+    label: "Blogroll"
+    files:
+      - label: "Blogroll"
+        name: "blogroll-en"
+        file: "content/blogroll/index.en.md"
+        editor:
+          preview: false
+        fields:
+          - label: "Title"
+            name: "title"
+            widget: "string"
+
+          - label: "Publish Date"
+            name: "date"
+            widget: "datetime"
+            format: "YYYY-MM-DD"
+            default: "{{now}}"
+
+          - label: "Body"
+            name: "body"
+            widget: "markdown"
+
+      - label: "مدوّنات أخرى"
+        name: "blogroll-ar"
+        file: "content/blogroll/index.ar.md"
+        editor:
+          preview: false
+        fields:
+          - label: "Title"
+            name: "title"
+            widget: "string"
+
+          - label: "Publish Date"
+            name: "date"
+            widget: "datetime"
+            format: "YYYY-MM-DD"
+            default: "{{now}}"
+
+          - label: "Body"
+            name: "body"
+            widget: "markdown"
+
+  - name: "contact_me"
+    label: "Contact me"
+    files:
+      - label: "Contact me"
+        name: "contact_me-en"
+        file: "content/contact_me/index.en.md"
+        editor:
+          preview: false
+        fields:
+          - label: "Title"
+            name: "title"
+            widget: "string"
+
+          - label: "Body"
+            name: "body"
+            widget: "markdown"
+
+      - label: "تواصل معي"
+        name: "contact_me-ar"
+        file: "content/contact_me/index.ar.md"
+        editor:
+          preview: false
+        fields:
+          - label: "Title"
+            name: "title"
+            widget: "string"
+
+          - label: "Body"
+            name: "body"
+            widget: "markdown"
+
+  - name: "privacy_policy"
+    label: "Privacy Policy"
+    files:
+      - label: "Privacy Policy"
+        name: "privacy_policy-en"
+        file: "content/privacy_policy/index.en.md"
+        editor:
+          preview: false
+        fields:
+          - label: "Title"
+            name: "title"
+            widget: "string"
+
+          - label: "Body"
+            name: "body"
+            widget: "markdown"
+
+      - label: "سياسة الخصوصية"
+        name: "privacy_policy-ar"
+        file: "content/privacy_policy/index.ar.md"
+        editor:
+          preview: false
+        fields:
+          - label: "Title"
+            name: "title"
+            widget: "string"
+
+          - label: "Body"
+            name: "body"
+            widget: "markdown"
+
+  - name: "disclaimer"
+    label: "Disclaimer"
+    files:
+      - label: "Disclaimer"
+        name: "disclaimer-en"
+        file: "content/disclaimer/index.en.md"
+        editor:
+          preview: false
+        fields:
+          - label: "Title"
+            name: "title"
+            widget: "string"
+
+          - label: "Body"
+            name: "body"
+            widget: "markdown"
+
+      - label: "إِخلاء المسؤولية"
+        name: "disclaimer-ar"
+        file: "content/disclaimer/index.ar.md"
+        editor:
+          preview: false
+        fields:
+          - label: "Title"
+            name: "title"
+            widget: "string"
+
+          - label: "Body"
+            name: "body"
+            widget: "markdown"
+
+  - name: "subscribe"
+    label: "Subscribe"
+    files:
+      - label: "Subscribe"
+        name: "subscribe-en"
+        file: "content/subscribe/index.en.md"
+        editor:
+          preview: false
+        fields:
+          - label: "Title"
+            name: "title"
+            widget: "string"
+
+          - label: "Body"
+            name: "body"
+            widget: "markdown"
+
+      - label: "اشترك"
+        name: "subscribe-ar"
+        file: "content/subscribe/index.ar.md"
+        editor:
+          preview: false
+        fields:
+          - label: "Title"
+            name: "title"
+            widget: "string"
+
+          - label: "Body"
+            name: "body"
+            widget: "markdown"

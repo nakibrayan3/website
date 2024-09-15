@@ -1,0 +1,19 @@
+{{ define "main" }}
+
+<h1 style="margin-bottom: 3rem;">{{ T "blog" }}</h1>
+
+{{ .Content }}
+
+{{ range .Data.Pages.GroupByDate "2006" }}
+
+<h2>{{ .Key }}</h2>
+
+<ul>
+    {{ range .Pages }}
+    <li><a href="{{ .Permalink }}" class="contrast">{{ .LinkTitle }}</a></li>
+    {{ end }}
+</ul>
+
+{{ end }}
+
+{{ end }}

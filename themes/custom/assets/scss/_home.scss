@@ -1,0 +1,70 @@
+.home-img {
+  display: block;
+  margin-inline: auto;
+  border-radius: 5px;
+
+  height: auto;
+  margin-bottom: var(--pico-typography-spacing-vertical);
+}
+
+.home-title,
+.home-pronouns {
+  text-align: center;
+}
+
+.home-title {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  h1 {
+    margin-bottom: 0 !important;
+  }
+
+  svg {
+    margin-inline-start: 0.5rem;
+    margin-top: 0.3rem;
+    color: var(--pico-primary);
+  }
+}
+
+.home-occupation-location-container {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+ 
+  @media screen and (max-width: 576px) {
+    flex-direction: column;
+  }
+
+  .home-occupation,
+  .home-location {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    svg {
+      margin-inline-end: 0.3rem;
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  .home-occupation {
+    margin-inline-end: 1.5rem;
+
+    @media screen and (max-width: 576px) {
+      margin-inline-end: 0;
+      margin-bottom: var(--pico-typography-spacing-vertical);
+    }
+  }
+}
+
+hgroup {
+  margin-bottom: 4rem !important;
+}

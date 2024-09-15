@@ -1,0 +1,7 @@
+{{ define "main" }}
+  
+  <h1>{{ .Date | time.Format ":date_long" }} {{ T "at" }} {{ .Date | time.Format ":time_short" }}</h1>
+
+  {{ .Content }}
+
+{{ end }}

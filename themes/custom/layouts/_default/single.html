@@ -1,0 +1,16 @@
+{{ define "main" }}
+  
+<hgroup>
+  {{ if page.Params.title }}
+  <h1>{{ .Title }}</h1>
+  {{ end }}
+
+  {{ if page.Params.date }}
+  <time datetime="{{ .Date | time.Format ":date_long" }}"
+    >{{ .Date | time.Format ":date_long" }}</time>
+  {{ end }}
+</hgroup>
+
+  {{ .Content }}
+
+{{ end }}

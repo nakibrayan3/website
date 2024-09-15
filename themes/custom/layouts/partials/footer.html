@@ -1,0 +1,24 @@
+
+<div>
+  {{ range site.Menus.footer }}
+  <small>
+    <a
+      href="{{ .URL }}"
+      class="contrast"
+      {{ if findRE "^(https?:)?//" (lower .URL) }} target="_blank" rel="noopener"{{ end }}
+      >{{ .Name }}</a></small>
+  {{ end }}
+</div>
+
+<a href="#top">
+  {{ with resources.Get "logo.png" }}
+  {{ with .Resize "64x64 webp icon" }}
+  <img
+    src="{{ .Permalink }}"
+    alt="{{ site.Params.Name }}"
+    width="{{ .Width }}"
+    height="{{ .Height }}"
+  />
+  {{ end }}
+  {{ end }}
+</a>

@@ -1,0 +1,94 @@
+{{ define "main" }}
+
+{{ with resources.Get "picture.png" }}
+{{ with .Resize "300x webp picture" }}
+<img
+  src="{{ .RelPermalink }}"
+  width="{{ .Width }}"
+  height="{{ .Height }}"
+  alt="{{ site.Params.Name }}"
+  class= "home-img"
+  >
+{{ end }}
+{{ end }}
+
+<hgroup style="margin-bottom: 0 !important;">
+  <div class="home-title">
+    <h1>{{ site.Params.Name }}</h1>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="28"
+      height="28"
+      fill="currentColor"
+      class="bi bi-patch-check-fill"
+      viewBox="0 0 16 16"
+    >
+      <path
+        d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708"
+      />
+    </svg>
+  </div>
+
+  <div class="home-pronouns"><p>{{ site.Params.Pronouns }}</p></div>
+</hgroup>
+
+<div class="home-occupation-location-container">
+  <div class="home-occupation">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="20"
+      height="20"
+      fill="currentColor"
+      class="bi bi-briefcase-fill"
+      viewBox="0 0 16 16"
+    >
+      <path
+        d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v1.384l7.614 2.03a1.5 1.5 0 0 0 .772 0L16 5.884V4.5A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5"
+      />
+      <path
+        d="M0 12.5A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5V6.85L8.129 8.947a.5.5 0 0 1-.258 0L0 6.85z"
+      />
+    </svg>
+
+    <p>{{ site.Params.Occupation }}</p>
+  </div>
+  <div class="home-location">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="16"
+      height="16"
+      fill="currentColor"
+      class="bi bi-geo-alt-fill"
+      viewBox="0 0 16 16"
+    >
+      <path
+        d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"
+      />
+    </svg>
+    <p>{{ site.Params.Location }}</p>
+  </div>
+</div>
+
+<p class="home-bio">{{ site.Params.Bio }}</p>
+
+<h2>{{ T "tableOfContents" }}</h2>
+
+<ol>
+  {{ range site.Menus.main }}
+  <li><a
+      href="{{ .URL }}"
+      class="contrast"
+      {{ if findRE "^(https?:)?//" (lower .URL) }} target="_blank" rel="noopener"{{ end }}
+      >{{ .Name }}</a></li>
+  {{ end }}
+</ol>
+
+<h2>{{ T "writtenWorks" }}</h2>
+
+<ul>
+  {{ range  (where site.RegularPages "Section" "blog" | first 7) }}
+  <li><a class="contrast" href="{{ .Permalink }}">{{ .Title }}</a></li>
+  {{ end }}
+</ul>
+
+{{ end }}

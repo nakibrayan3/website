@@ -1,0 +1,5 @@
+<a
+    href="{{ .Destination | safeURL }}"
+    {{ if findRE "^(https?:)?//" (lower .Destination) }} target="_blank" rel="noopener"{{ end }}
+    >{{ .Text | safeHTML }}</a>
+{{- /* chomp trailing newline */ -}}

@@ -1,0 +1,49 @@
+{{ define "main" }}
+  
+<hgroup>
+  {{ if page.Params.title }}
+  <h1 style="margin-bottom: 0.4rem;">{{ .Title }}</h1>
+  {{ end }}
+
+  {{ if page.Params.date }}
+  <time datetime="{{ .Date | time.Format ":date_long" }}"
+    >{{ T "published" }} {{ .Date | time.Format ":date_long" }}</time>
+  {{ end }}
+
+  {{ if ne page.Params.lastmod page.Params.date }}
+  | <time datetime="{{ .Lastmod | time.Format ":date_long" }}"
+  >{{ T "updated" }} {{ .Lastmod | time.Format ":date_long" }}</time>
+  {{ end }}
+</hgroup>
+
+  {{ .Content }}
+
+  <hr style="margin: 2rem 0;"/>
+
+  <a role="button" href="mailto:nakibrayan@disroot.org?subject={{ T "re" }}: {{ .Title }}"
+  ><svg style="margin-inline-end: 0.5rem;" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+  </svg
+  >{{ T "reply_via_email" }}</a>
+
+  <a role="button" href="https://buymeacoffee.com/nakibrayan" target="_blank" rel="noopener"
+  ><svg style="margin-inline-end: 0.5rem;" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+    <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+  </svg
+  >{{ T "donate" }}</a>
+
+  {{ if page.Params.tags }}
+  <p style="margin-top: 2rem;">
+    <strong style="margin-inline-end: 0.8rem;">{{ T "tags" }}:</strong>
+    
+    {{ range (.GetTerms "tags") }}
+    <a
+      href="{{ .Permalink }}"
+      class="contrast"
+      style="margin-inline-end: 0.5rem;"
+      >#{{ .LinkTitle }}</a>
+    {{ end }}
+  </p>
+  {{ end }}
+
+{{ end }}

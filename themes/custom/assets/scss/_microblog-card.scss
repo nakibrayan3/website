@@ -1,0 +1,28 @@
+.microblog-card {
+    border: 0.1rem solid #1c212c;
+
+    &:not(:last-child) {
+      margin-bottom: 3rem !important;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    span {
+        position: relative;
+        top: -1.9rem;
+        border: 0.1rem solid #1c212c;
+        padding: 0.3rem;
+        background: var(--pico-primary-background);
+
+        a {
+            text-decoration: none;
+            color: var(--pico-code-background-color);
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
