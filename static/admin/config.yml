@@ -1,3 +1,5 @@
+site_url: https://nakibrayan.com
+
 backend:
   name: gitea
   repo: nakibrayan2/website
