@@ -1,6 +1,6 @@
 {{ define "main" }}
 
-{{ with resources.Get "picture.png" }}
+{{ with resources.Get "icons/picture.png" }}
 {{ with .Resize "300x webp picture" }}
 <img
   src="{{ .RelPermalink }}"
