@@ -1,5 +1,4 @@
 baseURL = "https://nakibrayan.com"
-theme = "custom"
 
 defaultContentLanguage = "ar"
 defaultContentLanguageInSubdir = true
