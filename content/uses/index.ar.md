@@ -27,9 +27,9 @@ date: 2024-09-12
 ### الهاتف الذكي
 
 * نظام التشغيل / التوزيعة: One UI
-* برامج النظام: Samsung's default
+* برامج النظام: الإفتراضية من Samsung
 * متاجر التطبيقات: Obtainium, Aurora Store
-* متفحات الوِب: Brave
+* متفح الوِب: Brave
 * المراسل اللخضي: SimpleX, Signal
 * عميل يوتيوب: Grayjay
 
