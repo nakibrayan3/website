@@ -21,7 +21,7 @@ date: 2024-09-12
 * عميل البريد الألكتروني: Evolution
 * مشغل الموسيقى: Strawberry Music Player
 * مشغل الفيديو: VLC
-* قارئ RSS: ‮taobsweN
+* قارئ ‮SSR:‭Newsboat
 * عميل بِت تورنت: Deluge
 
 ### الهاتف الذكي
