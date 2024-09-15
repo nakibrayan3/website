@@ -1,0 +1,36 @@
+when:
+  branch:
+    exclude: pages
+  event: [push, pull_request]
+
+clone:
+  git:
+    image: woodpeckerci/plugin-git
+    settings:
+      recursive: true
+
+steps:
+  build:
+    image: hugomods/hugo:exts
+    commands:
+      - hugo
+    when:
+      event: [pull_request, push]
+
+  publish:
+    image: bitnami/git
+    secrets: [mail, codeberg_token]
+    environment:
+      - HUGO_OUTPUT=public
+    commands:
+      - git config --global user.email $MAIL
+      - git config --global user.name "Woodpecker CI"
+      - git clone -b pages https://$CODEBERG_TOKEN@codeberg.org/$CI_REPO.git $CI_REPO_NAME
+      - cp -ar $HUGO_OUTPUT/. $CI_REPO_NAME/
+      - cp .domains $CI_REPO_NAME || true
+      - cd $CI_REPO_NAME
+      - git add --all || true
+      - git commit -m "Woodpecker CI ${CI_COMMIT_SHA}" || true
+      - git push || true
+    when:
+      event: push
