@@ -16,12 +16,12 @@ date: 2024-09-12
 * الصدفة: Bash
 * مدير النوافذ: niri
 * محرر النصوص: Helix
-* متصفحات الوِب: Mullvad Browser
+* متصفح الوِب: Mullvad Browser
 * مدير الملفات: Nautilus
 * عميل البريد الألكتروني: Evolution
 * مشغل الموسيقى: Strawberry Music Player
 * مشغل الفيديو: VLC
-* قارئ RSS: Newsboat
+* قارئ RSS: ‮taobsweN
 * عميل بِت تورنت: Deluge
 
 ### الهاتف الذكي
