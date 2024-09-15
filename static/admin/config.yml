@@ -1,10 +1,10 @@
 backend:
   name: gitea
-  repo: nakibrayan/website
-  app_id: d71565a5-f1eb-4ceb-8d7c-3e70305eeaa3
-  api_root: https://git.disroot.org/api/v1/
-  base_url: https://git.disroot.org/
-  auth_endpoint: https://git.disroot.org/login/oauth/authorize/
+  repo: nakibrayan2/website
+  app_id: 1d8da461-38ac-4977-ad0e-8c091ac6b54e
+  api_root: https://codeberg.org/api/v1
+  base_url: https://codeberg.org
+  auth_endpoint: https://codeberg.org/login/oauth/authorize
   branch: main
 
 media_folder: "static/assets"
