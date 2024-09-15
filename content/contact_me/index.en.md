@@ -11,8 +11,8 @@ title: Contact me
 
 ## Email
 
-- [rayan.nakib@tutamail.com](mailto:rayan.nakib@tutamail.com)
+- [nakibrayan@disroot.org](mailto:nakibrayan@disroot.org)
 
-- Download [public PGP key](/assets/A9A28F3FC427432A9C985BF98F441CF5AE5DAED5.asc) to encrypt email (expires on: May 31, 2025).
+- Download [public PGP key](/assets/63b28f38777db6542089005c154c4f3a0b4b28b9.asc) to encrypt email (expires on: Sep 14, 2025).
 
-- Key fingerprint: A9A2 8F3F C427 432A 9C98  5BF9 8F44 1CF5 AE5D AED5
+- Key fingerprint: 63B2 8F38 777D B654 2089  005C 154C 4F3A 0B4B 28B9
