@@ -1,5 +1,7 @@
 site_url: https://nakibrayan.com
 
+logo_url: https://nakibrayan.com/admin/logo.svg
+
 backend:
   name: gitea
   repo: nakibrayan2/website
