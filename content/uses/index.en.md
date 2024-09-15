@@ -1,6 +1,6 @@
 ---
 title: Programs and Equipment I Use
-date: 2024-09-12
+date: 2024-09-15
 ---
 ## Hardware I Use
 
@@ -16,7 +16,7 @@ date: 2024-09-12
 * Shell: Bash
 * Window Manger: niri
 * Text editor: Helix
-* Web browsers: Mullvad Browser
+* Web browser: Mullvad Browser
 * File manager: Nautilus
 * Email client: Evolution
 * Music player: Strawberry Music Player
@@ -29,7 +29,7 @@ date: 2024-09-12
 * Operating System / Distribution: One UI
 * System apps: Samsung's default
 * App stores: Obtainium, Aurora Store
-* Web browsers: Brave
+* Web browser: Brave
 * Instant messaging: SimpleX, Signal
 * YouTube client: Grayjay
 
