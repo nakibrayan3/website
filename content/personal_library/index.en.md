@@ -1,6 +1,6 @@
 ---
 title: A list of the books in my personal library
-date: 2024-09-12
+date: 2024-09-15
 ---
 ## English Books
 
