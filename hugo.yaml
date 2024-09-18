@@ -1,0 +1,131 @@
+baseURL: https://nakibrayan.com
+
+defaultContentLanguage: ar
+defaultContentLanguageInSubdir: false
+
+languages:
+  ar:
+    disabled: false
+    languageCode: ar
+    languageDirection: rtl
+    languageName: العربية
+    title: موقع ريان نقيب
+    copyright: CC BY-NC-SA 4.0
+    weight: 0
+    menus:
+      main:
+        - name: المدوّنة المصغرة
+          pageRef: /microblog
+          weight: 1
+        - name: المدوّنة
+          pageRef: /blog
+          weight: 2
+        - name: الآن
+          pageRef: /now
+          weight: 3
+        - name: يستخدم
+          pageRef: /uses
+          weight: 4
+        - name: مكتبتي الشخصية
+          pageRef: /personal_library
+          weight: 5
+        - name: مدوّنات أخرى
+          pageRef: /blogroll
+          weight: 6
+        - name: تواصل معي
+          pageRef: /contact_me
+          weight: 7
+      footer:
+        - name: CC BY-NC-SA 4.0
+          url: https://creativecommons.org/licenses/by-nc-sa/4.0
+          weight: 1
+        - name: سياسة الخصوصيّة
+          pageRef: /privacy_policy
+          weight: 2
+        - name: إِخلاء المسؤولية
+          pageRef: /disclaimer
+          weight: 3
+        - name: اشترك
+          pageRef: /subscribe
+          weight: 4
+    params:
+      Logo: /avatar.svg
+      Name: ريان نقيب
+      Pronouns: هو
+      Occupation: طالب اتصالات
+      Location: الجزائر
+      Description: أنا نقيب ريان وهذا موقعو ومدونتي. يوجد الكثير هنا، اذا شكرا لزيارتك!
+      Bio: ''
+  en:
+    disabled: false
+    languageCode: en
+    languageDirection: ltr
+    languageName: English
+    title: Rayan Nakib's Website
+    copyright: CC BY-NC-SA 4.0
+    weight: 1
+    menus:
+      main:
+        - name: Microblog
+          pageRef: /microblog
+          weight: 1
+        - name: Blog
+          pageRef: /blog
+          weight: 2
+        - name: Now
+          pageRef: /now
+          weight: 3
+        - name: Uses
+          pageRef: /uses
+          weight: 4
+        - name: Personal Library
+          pageRef: /personal_library
+          weight: 5
+        - name: Blogroll
+          pageRef: /blogroll
+          weight: 6
+        - name: Contact me
+          pageRef: /contact_me
+          weight: 7
+      footer:
+        - name: CC BY-NC-SA 4.0
+          url: https://creativecommons.org/licenses/by-nc-sa/4.0
+          weight: 1
+        - name: Privacy Policy
+          pageRef: /privacy_policy
+          weight: 2
+        - name: Disclaimer
+          pageRef: /disclaimer
+          weight: 3
+        - name: Subscribe
+          pageRef: /subscribe
+          weight: 4
+    params:
+      Logo: /avatar.svg
+      Name: Rayan Nakib
+      Pronouns: he/him
+      Occupation: Telecommunications Student
+      Location: Algeria
+      Description: I am Rayan Nakib and this is my website and blog. There’s a lot here, so thanks for stopping by!
+      Bio: ''
+    
+outputs:
+  home:
+    - html
+  section:
+    - html
+    - rss
+  taxonomy:
+    - html
+  term:
+    - html
+services:
+  rss:
+    limit: -1
+
+taxonomies:
+  tag: tags
+
+markup:
+  highlight:
+    noClasses: false
