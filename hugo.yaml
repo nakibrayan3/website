@@ -108,7 +108,46 @@ languages:
       Location: Algeria
       Description: I am Rayan Nakib and this is my website and blog. There’s a lot here, so thanks for stopping by!
       Bio: ''
-    
+
+minify:
+  disableCSS: false
+  disableHTML: false
+  disableJS: false
+  disableJSON: false
+  disableSVG: false
+  disableXML: false
+  minifyOutput: true
+  tdewolff:
+    css:
+      inline: false
+      keepCSS2: true
+      precision: 0
+    html:
+      keepComments: false
+      keepConditionalComments: false
+      keepDefaultAttrVals: true
+      keepDocumentTags: true
+      keepEndTags: true
+      keepQuotes: false
+      keepSpecialComments: true
+      keepWhitespace: false
+      templateDelims:
+      - ""
+      - ""
+    js:
+      keepVarNames: false
+      precision: 0
+      version: 2022
+    json:
+      keepNumbers: false
+      precision: 0
+    svg:
+      inline: false
+      keepComments: false
+      precision: 0
+    xml:
+      keepWhitespace: false
+
 outputs:
   home:
     - html
