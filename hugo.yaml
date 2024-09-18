@@ -109,6 +109,14 @@ languages:
       Description: I am Rayan Nakib and this is my website and blog. There’s a lot here, so thanks for stopping by!
       Bio: ''
 
+redirects:
+- from: /en/**
+  status: 404
+  to: /en/404.html
+- from: /**
+  status: 404
+  to: /404.html
+
 minify:
   disableCSS: false
   disableHTML: false
