@@ -1,7 +1,7 @@
 baseURL = "https://nakibrayan.com"
 
 defaultContentLanguage = "ar"
-defaultContentLanguageInSubdir = true
+defaultContentLanguageInSubdir = false
 
 [languages]
   [languages.ar]
