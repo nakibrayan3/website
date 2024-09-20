@@ -48,6 +48,9 @@ languages:
         - name: اشترك
           pageRef: /subscribe
           weight: 4
+        - name: تبرّع
+          url: https://buymeacoffee.com/nakibrayan
+          weight: 5
     params:
       Logo: /avatar.svg
       Name: ريان نقيب
@@ -100,6 +103,9 @@ languages:
         - name: Subscribe
           pageRef: /subscribe
           weight: 4
+        - name: Donate
+          url: https://buymeacoffee.com/nakibrayan
+          weight: 5
     params:
       Logo: /avatar.svg
       Name: Rayan Nakib
