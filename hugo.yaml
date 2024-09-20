@@ -36,8 +36,8 @@ languages:
           pageRef: /contact_me
           weight: 7
       footer:
-        - name: CC BY-NC-SA 4.0
-          url: https://creativecommons.org/licenses/by-nc-sa/4.0
+        - name: CC BY 4.0
+          url: https://creativecommons.org/licenses/by/4.0
           weight: 1
         - name: سياسة الخصوصيّة
           pageRef: /privacy_policy
@@ -94,8 +94,8 @@ languages:
           pageRef: /contact_me
           weight: 7
       footer:
-        - name: CC BY-NC-SA 4.0
-          url: https://creativecommons.org/licenses/by-nc-sa/4.0
+        - name: CC BY 4.0
+          url: https://creativecommons.org/licenses/by/4.0
           weight: 1
         - name: Privacy Policy
           pageRef: /privacy_policy
