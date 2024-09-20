@@ -6,11 +6,16 @@ article.microblog-card {
   margin-inline-end: auto;
 }
 
+h1.title {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
 {{ end }}
 
 {{ define "main" }}
 
-<h1 style="margin-bottom: 3rem;">{{ T "microblog" }}</h1>
+<h1 class="title">{{ T "microblog" }}</h1>
 
 {{ .Content }}
 
