@@ -11,13 +11,16 @@ footer {
   }
 
   div {
-
     @media screen and (max-width: 768px) {
-      margin-bottom: var(--pico-typography-spacing-vertical);
+      margin-bottom: 2rem;
     }
 
     small {
-      margin-bottom: var(--pico-typography-spacing-vertical);
+      @media screen and (max-width: 768px) {
+        display: inline-block;
+        margin-bottom: 0.5rem;
+      }
+
       margin-inline-end: 1rem;
     }
   }
