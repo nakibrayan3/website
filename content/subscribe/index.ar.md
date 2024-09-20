@@ -3,5 +3,5 @@ title: اشترك
 ---
 ## تلقيمات RSS
 
-- [تلقيم RSS المدوّنة](/ar/blog/index.xml)
-- [تلقيم RSS المدونة المصغرة](/ar/microblog/index.xml)
+- [تلقيم RSS المدوّنة](/blog/index.xml)
+- [تلقيم RSS المدونة المصغرة](/microblog/index.xml)
