@@ -45,15 +45,12 @@ languages:
         - name: إِخلاء المسؤولية
           pageRef: /disclaimer
           weight: 3
-        - name: إحصائيات
-          url: https://tinylytics.app/public/xKGyaUkg1YJesJVj35yf
-          weight: 4
         - name: اشترك
           pageRef: /subscribe
-          weight: 5
+          weight: 4
         - name: تبرّع
           url: https://buymeacoffee.com/nakibrayan
-          weight: 6
+          weight: 5
     params:
       Logo: /avatar.svg
       Name: ريان نقيب
@@ -103,15 +100,12 @@ languages:
         - name: Disclaimer
           pageRef: /disclaimer
           weight: 3
-        - name: Stats
-          url: https://tinylytics.app/public/xKGyaUkg1YJesJVj35yf
-          weight: 4
         - name: Subscribe
           pageRef: /subscribe
-          weight: 5
+          weight: 4
         - name: Donate
           url: https://buymeacoffee.com/nakibrayan
-          weight: 6
+          weight: 5
     params:
       Logo: /avatar.svg
       Name: Rayan Nakib
